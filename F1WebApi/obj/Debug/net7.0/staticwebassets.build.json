@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "/FNmtHCm813tsJwJztwaH5B9o2h4S5Oz1Ax+BjO5mls=",
+  "Source": "F1WebApi",
+  "BasePath": "_content/F1WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "F1WebApi/wwwroot",
+      "Source": "F1WebApi",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/carlos-sainz.png",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "images/carlos-sainz.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/carlos-sainz.png"
+    },
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/charles-leclerc.png",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "images/charles-leclerc.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/charles-leclerc.png"
+    },
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/michael-schumacher.png",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "images/michael-schumacher.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/michael-schumacher.png"
+    },
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}

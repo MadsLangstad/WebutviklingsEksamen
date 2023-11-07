@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/carlos-sainz.png",
+      "PackagePath": "staticwebassets/images/carlos-sainz.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/charles-leclerc.png",
+      "PackagePath": "staticwebassets/images/charles-leclerc.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/michael-schumacher.png",
+      "PackagePath": "staticwebassets/images/michael-schumacher.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.F1WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.F1WebApi.props",
+      "PackagePath": "build\\F1WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.F1WebApi.props",
+      "PackagePath": "buildMultiTargeting\\F1WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.F1WebApi.props",
+      "PackagePath": "buildTransitive\\F1WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
