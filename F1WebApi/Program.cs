@@ -25,7 +25,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+DefaultFilesOptions options = new();
+options.DefaultFileNames.Add("index.html");
+app.UseDefaultFiles(options);
+
+app.UseStaticFiles();
+
+
 app.UseCors("AllowAll");
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -5,27 +5,26 @@ using WebutviklingsEksamen.Contexts;
 using WebutviklingsEksamen.Models;
 using Microsoft.EntityFrameworkCore;
 
-
 [ApiController]
 [Route("api/[controller]")]
-public class RaceController : ControllerBase
+public class CarController : ControllerBase
 {
     private readonly F1Context context;
 
-    public RaceController(F1Context _context)
+    public CarController(F1Context _context)
     {
         context = _context;
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<Race>>> Get()
+    public async Task<ActionResult<List<Car>>> Get()
     {
         try
         {
-            List<Race> races = await context.Races.ToListAsync();
-            if (races != null)
+            List<Car> cars = await context.Cars.ToListAsync();
+            if (cars != null)
             {
-                return Ok(races);
+                return Ok(cars);
             }
             else
             {

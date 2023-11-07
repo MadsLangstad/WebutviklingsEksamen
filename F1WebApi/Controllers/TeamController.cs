@@ -37,4 +37,11 @@ public class TeamController : ControllerBase
             return StatusCode(500);
         }
     }
+    /*
+    - Get something by id
+    - Get something by other property than id, for example GetByName
+    - Delete something
+    - Create something (including image upload)
+    - Update something
+    */
 }

@@ -1,7 +1,6 @@
 namespace WebutviklingsEksamen.Contexts
 {
     using Microsoft.EntityFrameworkCore;
-    using WebutviklingsEksamen.Interfaces;
     using WebutviklingsEksamen.Models;
 
     public class F1Context : DbContext
@@ -11,7 +10,6 @@ namespace WebutviklingsEksamen.Contexts
         public DbSet<Team> Teams { get; set; }
         public DbSet<Race> Races { get; set; }
         public DbSet<Driver> Drivers { get; set; }
-        // Implement
-        // public DbSet<Car> Cars { get; set; }
+        public DbSet<Car> Cars { get; set; }
     }
 }
