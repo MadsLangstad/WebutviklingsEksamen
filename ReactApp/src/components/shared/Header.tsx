@@ -9,7 +9,7 @@ const Header: React.FC = () => {
             <ul className="flex m-0 p-0 gap-5">
                 <li><a href="#" className="no-underline text-white">API</a></li>
                 <li><a href="/" className="no-underline text-white">Game</a></li>
-                <li><a href="/" className="no-underline text-white">Documentation</a></li>
+                <li><a href="http://localhost:5143/index.html" className="no-underline text-white">Documentation</a></li>
                 <li><a href="/" className="no-underline text-white">About</a></li>
             </ul>
         </header>
