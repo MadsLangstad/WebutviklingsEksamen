@@ -37,11 +37,79 @@ public class TeamController : ControllerBase
             return StatusCode(500);
         }
     }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Team>> Get(int id)
+    {
+        try
+        {
+            Team? team = await context.Teams.FirstOrDefaultAsync(t => t.Id == id);
+            if (team != null)
+            {
+                return Ok(team);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<Team>> Delete(int id)
+    {
+        try
+        {
+            Team? team = await context.Teams.FirstOrDefaultAsync(t => t.Id == id);
+            if (team != null)
+            {
+                context.Teams.Remove(team);
+                await context.SaveChangesAsync();
+                return Ok(team);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<Team>> Post([FromForm] Team team, [FromForm] IFormFile file)
+    {
+        try
+        {
+            if (file != null && file.Length > 0)
+            {
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+                team.ImageUrl = fileName;
+            }
+
+            context.Teams.Add(team);
+            await context.SaveChangesAsync();
+            return Ok(team);
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
     /*
-    - Get something by id
     - Get something by other property than id, for example GetByName
-    - Delete something
-    - Create something (including image upload)
     - Update something
     */
 }

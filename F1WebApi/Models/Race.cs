@@ -8,4 +8,5 @@ public class Race : IRace
     public double WinnerTime { get; set; }
     public string? GrandPrix { get; set; }
     public int NumberOfLaps { get; set; }
+    public string? Image { get; set; }
 }

@@ -1,9 +1,12 @@
+import Header from './components/Header'
+import Example from './components/Example'
 
 function App() {
 
   return (
     <>
-      <h1 className="uppercase">React App</h1>
+      <Header />
+      <Example />
     </>
   )
 }

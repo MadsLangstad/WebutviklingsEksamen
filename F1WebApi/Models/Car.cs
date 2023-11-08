@@ -10,4 +10,5 @@ public class Car : ICar
     public string? Tires { get; set; }
     public int Point { get; set; }
     public int Place { get; set; }
+    public string? ImageUrl { get; set; }
 }

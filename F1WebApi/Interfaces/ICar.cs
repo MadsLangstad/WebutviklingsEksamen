@@ -9,4 +9,5 @@ public interface ICar
     string? Tires { get; set; }
     int Point { get; set; }
     int Place { get; set; }
+    string? ImageUrl { get; set; }
 }

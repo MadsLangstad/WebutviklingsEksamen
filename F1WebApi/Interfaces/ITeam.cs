@@ -6,4 +6,5 @@ public interface ITeam
     string? Manufacturer { get; set; }
     string? CarImageDriver1 { get; set; }
     string? CarImageDriver2 { get; set; }
+    string? ImageUrl { get; set; }
 }

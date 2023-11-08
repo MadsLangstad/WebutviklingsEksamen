@@ -7,4 +7,5 @@ public interface IRace
     double WinnerTime { get; set; }
     string? GrandPrix { get; set; }
     int NumberOfLaps { get; set; }
+    string? Image { get; set; }
 }

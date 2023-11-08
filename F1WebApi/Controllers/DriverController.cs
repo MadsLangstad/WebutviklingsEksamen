@@ -38,11 +38,50 @@ public class DriverController : ControllerBase
         }
     }
 
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Driver>> Get(int id)
+    {
+        try
+        {
+            Driver? driver = await context.Drivers.FindAsync(id);
+            if (driver != null)
+            {
+                return Ok(driver);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<Driver>> Delete(int id)
+    {
+        try
+        {
+            Driver? driver = await context.Drivers.FindAsync(id);
+            if (driver != null)
+            {
+                context.Drivers.Remove(driver);
+                await context.SaveChangesAsync();
+                return Ok(driver);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
     /*
-    - Get something by id
-    - Get something by other property than id, for example GetByName
-    - Delete something
-    - Create something (including image upload)
     - Update something
     */
 }

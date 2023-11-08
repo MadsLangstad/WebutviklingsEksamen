@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/css/style2.css",
+      "PackagePath": "staticwebassets/css/style2.css"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/carlos-sainz.png",
       "PackagePath": "staticwebassets/images/carlos-sainz.png"
     },
@@ -15,6 +23,10 @@
     {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/scripts/index.js",
+      "PackagePath": "staticwebassets/scripts/index.js"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.F1WebApi.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -7,4 +7,5 @@ public class Team : ITeam
     public string? Manufacturer { get; set; }
     public string? CarImageDriver1 { get; set; }
     public string? CarImageDriver2 { get; set; }
+    public string? ImageUrl { get; set; }
 }
