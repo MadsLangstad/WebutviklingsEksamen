@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
-public class DriverController : ControllerBase
+public class DriversController : ControllerBase
 {
     private readonly F1Context context;
 
-    public DriverController(F1Context _context)
+    public DriversController(F1Context _context)
     {
         context = _context;
     }
@@ -81,7 +81,19 @@ public class DriverController : ControllerBase
             return StatusCode(500);
         }
     }
-    /*
-    - Update something
-    */
+
+    public async Task<ActionResult<Driver>> Post([FromBody] Driver driver)
+    {
+        try
+        {
+            var result = await context.Drivers.AddAsync(driver); ;
+            await context.SaveChangesAsync();
+            return Ok(result.Entity);
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
 }

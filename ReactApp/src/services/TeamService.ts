@@ -1,25 +1,45 @@
 import axios, { AxiosResponse } from 'axios';
 
-// Define a type for the team object based on the structure you expect from the API
 type Team = {
-  id: string; // Assuming there's an 'id' field
-  name: string; // Assuming there's a 'name' field for the team name
-  // ... add other fields as expected from your API
-};
+  id: number;
+  fullTeamName: string | null;
+  base: string | null;
+  teamChief: string | null;
+  chassis: string | null;
+  powerUnit: string | null;
+  firstTeamEntry: string | null;
+  worldChampionships: string | null;
+  higestRaceFinish: string | null;
+  polePosition: number;
+  fastestLaps: string | null;
+}
 
 const TeamService = (() => {
   const teamController = "http://localhost:5143/api/Team";
 
-  // The getAllTeams method now explicitly states that it returns a Promise of Team[]
   const getAllTeams = async (): Promise<Team[]> => {
-    // We can also specify the type of the Axios response to be AxiosResponse<Team[]>
     const result: AxiosResponse<Team[]> = await axios.get(teamController);
     console.log(result);
     return result.data;
   };
 
+  const addTeam = async (teamName: string, teamChief: string): Promise<Team> => {
+
+    axios.post(teamController, {
+      FullTeamName: teamName,
+      TeamChief: teamChief,
+    })
+    .then(function (response) { 
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  };
+
   return {
     getAllTeams,
+    addTeam
   };
 })();
 

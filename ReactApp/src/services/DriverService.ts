@@ -1,25 +1,45 @@
 import axios, { AxiosResponse } from 'axios';
 
-// Define a type or interface for the driver object based on the structure you expect from the API
 type Driver = {
-  id: string; // Assuming there's an 'id' field
-  name: string; // Assuming there's a 'name' field
-  // ... add other fields as expected from your API
-};
+  id: number;
+  name: string | null;
+  team: string | null;
+  country: string | null;
+  podiums: number | null;
+  grandPrixEntered: number;
+  worldChampionships: number | null;
+  higestRaceFinish: string | null;
+  highestGridPosition: number;
+  dateOfBirth: string;
+  placeOfBirth: string | null;
+  driverImage: string | null;
+}
 
 const DriverService = (() => {
-  const driverController = "http://localhost:5143/api/Driver";
+  const driverController = "http://localhost:5143/api/drivers";
 
-  // The getAllDrivers method now explicitly states that it returns a Promise of Driver[]
   const getAllDrivers = async (): Promise<Driver[]> => {
-    // We can also specify the type of the Axios response to be AxiosResponse<Driver[]>
     const result: AxiosResponse<Driver[]> = await axios.get(driverController);
-    console.log(result);
     return result.data;
   };
 
+  const addDriver = async (driverName: string, driverCountry: string): Promise<Driver> => {
+    
+    axios.post(driverController, {
+      name: driverName,
+      country: driverCountry,
+    })
+    .then(function (response) { 
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
   return {
     getAllDrivers,
+    addDriver
   };
 })();
 

@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import TeamService from '../services/TeamService';
-
-// Define an interface for the team object
-interface Team {
-  id: string;
-  name: string;
-  // You can add other properties that a team might have
-}
+import TeamItem from './TeamItem';
 
 const TeamList: React.FC = () => {
-  const [teams, setTeams] = useState<Team[]>([]);
+  const [teams, setTeams] = useState<TeamItem[]>([]);
 
   useEffect(() => {
     getTeamsFromService();
@@ -24,20 +18,15 @@ const TeamList: React.FC = () => {
     }
   };
 
-  const getTeamsJSX = () => {
-    const teamsJSX = teams.map((team) => (
-      <li key={team.id}>{team.name}</li>
-    ));
-    return teamsJSX; 
-  };
-
   return (
-    <section>
-      <h3>F1 Teams</h3>
-      <p>Number of Formula 1 Teams: {teams.length}</p>
-      <ul>{getTeamsJSX()}</ul>
-    </section>
+    <>
+      {teams.map(team => (
+        <TeamItem
+          key={team.id}
+          team={team}
+        />
+      ))}
+    </>
   );
 };
-
 export default TeamList;

@@ -83,30 +83,17 @@ public class RaceController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Race>> Post([FromForm] Race race, [FromForm] IFormFile image)
+    public async Task<ActionResult<Race>> Post([FromBody] Race race)
     {
         try
         {
-            if (image != null && image.Length > 0)
-            {
-                using (var ms = new MemoryStream())
-                {
-                    image.CopyTo(ms);
-                    race.Image = Convert.ToBase64String(ms.ToArray());
-                }
-            }
-
-            context.Races.Add(race);
+            var result = await context.Races.AddAsync(race);
             await context.SaveChangesAsync();
-            return Ok(race);
+            return Ok(result.Entity);
         }
-
         catch
         {
             return StatusCode(500);
         }
     }
-    /*
-    - Update something
-    */
 }

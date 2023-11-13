@@ -1,18 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { About, Home, Game } from './pages'
+
 import Header from './components/shared/Header'
-import CarList from './components/CarList'
-import DriverList from './components/DriverList'
-import TeamList from './components/TeamList'
-import RaceList from './components/RaceList'
+
 
 function App() {
 
   return (
     <>
       <Header />
-      <DriverList />
-      <TeamList />
-      <RaceList />
-      <CarList />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}>Api</Route>
+          <Route path="/game" element={<Game/>}>Game</Route>
+          <Route path="/about" element={<About/>}>About</Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

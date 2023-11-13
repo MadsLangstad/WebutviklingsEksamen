@@ -10,6 +10,5 @@ namespace WebutviklingsEksamen.Contexts
         public DbSet<Team> Teams { get; set; }
         public DbSet<Race> Races { get; set; }
         public DbSet<Driver> Drivers { get; set; }
-        public DbSet<Car> Cars { get; set; }
     }
 }

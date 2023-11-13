@@ -83,33 +83,17 @@ public class TeamController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Team>> Post([FromForm] Team team, [FromForm] IFormFile file)
+    public async Task<ActionResult<Team>> Post([FromBody] Team team)
     {
         try
         {
-            if (file != null && file.Length > 0)
-            {
-                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    await file.CopyToAsync(stream);
-                }
-                team.ImageUrl = fileName;
-            }
-
-            context.Teams.Add(team);
+            var result = await context.Teams.AddAsync(team);
             await context.SaveChangesAsync();
-            return Ok(team);
+            return Ok(result.Entity);
         }
         catch
         {
             return StatusCode(500);
         }
     }
-
-    /*
-    - Get something by other property than id, for example GetByName
-    - Update something
-    */
 }
