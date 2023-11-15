@@ -82,18 +82,45 @@ public class DriversController : ControllerBase
         }
     }
 
+    [HttpPost]
     public async Task<ActionResult<Driver>> Post([FromBody] Driver driver)
     {
-        try
-        {
-            var result = await context.Drivers.AddAsync(driver); ;
-            await context.SaveChangesAsync();
-            return Ok(result.Entity);
-        }
-        catch
-        {
-            return StatusCode(500);
-        }
+        var result = await context.Drivers.AddAsync(driver); ;
+        await context.SaveChangesAsync();
+        return Ok(result.Entity);
     }
 
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Driver>> Put(int id, [FromBody] Driver updatedDriver)
+    {
+        if (updatedDriver == null)
+        {
+            return BadRequest("Driver data is null.");
+        }
+
+        try
+        {
+            var driver = await context.Drivers.FindAsync(id);
+            if (driver == null)
+            {
+                return NotFound($"Driver with Id = {id} not found.");
+            }
+
+            // Updating properties
+            driver.Name = updatedDriver.Name;
+            driver.Team = updatedDriver.Team;
+            driver.Country = updatedDriver.Country;
+
+
+            context.Drivers.Update(driver);
+            await context.SaveChangesAsync();
+
+            return Ok(driver);
+        }
+        catch (Exception ex)
+        {
+            // Log the exception details
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
 }

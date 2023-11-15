@@ -23,23 +23,29 @@ const DriverService = (() => {
     return result.data;
   };
 
+
   const addDriver = async (driverName: string, driverCountry: string): Promise<Driver> => {
-    
-    axios.post(driverController, {
+    const result: AxiosResponse<Driver> = await axios.post(driverController, {
       name: driverName,
       country: driverCountry,
-    })
-    .then(function (response) { 
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
     });
+    return result;
   }
+
+  const deleteDriver = async (id: number): Promise<void> => {
+    await axios.delete(`${driverController}/${id}`);
+  };
+
+  const updateDriver = async (id: number, updatedDriver: Driver): Promise<Driver> => {
+    const result: AxiosResponse<Driver> = await axios.put(`${driverController}/${id}`, updatedDriver);
+    return result.data;
+  };
 
   return {
     getAllDrivers,
-    addDriver
+    addDriver,
+    deleteDriver,
+    updateDriver
   };
 })();
 

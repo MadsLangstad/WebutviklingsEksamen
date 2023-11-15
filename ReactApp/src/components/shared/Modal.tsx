@@ -16,23 +16,77 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
     const [teamChief, setTeamChief] = useState("");
     const [raceCircuit, setRaceCircuit] = useState("");
     const [numberOfLaps, setNumberOfLaps] = useState(0);
+    const [success, setSuccess] = useState(false);
+    const [fail, setFail] = useState(false);
 
     const addDriver = async () => {
-      let res = await DriverService.addDriver(driverName, driverCountry);
+      try {
+        const res = await DriverService.addDriver(driverName, driverCountry);
+        if(res.status === 200) {
+          setSuccess(true);
+          console.log(success)
+        }
+        //FIX
+        else {
+          setFail(true);
+        }
+        setDriverName("");
+        setDriverCountry("");
+
+      } catch (error) {
+        setFail(true);
+        console.error('Api call failed', error)
+      }
     }
+
 
     const addTeam = async () => {
-      let res = await TeamService.addTeam(teamName, teamChief);
+      try {
+        const res = await TeamService.addTeam(teamName, teamChief);
+      if(res.status == 200) {
+        setSuccess(true);
+        console.log(success)
+      }
+      //FIX
+      else {
+        setFail(true);
+        console.log(fail)
+      }
+      setTeamName("");
+      setTeamChief("");
+    } catch (error) {
+      setFail(true);
+      console.error('Api call failed', error)
     }
+}
+      
 
     const addRace = async () => {
-      let res = await RaceService.addRace(raceCircuit, numberOfLaps);
+      try {
+        const res = await RaceService.addRace(raceCircuit, numberOfLaps);
+      if(res.status == 200) {
+        setSuccess(true);
+        console.log(success)
+      }
+      //FIX
+      else {
+        setFail(true);
+        console.log(fail)
+      }
+      setRaceCircuit("");
+      setNumberOfLaps(0);
+    } catch (error) {
+      setFail(true);
+      console.error('Api call failed', error)
     }
+}
+      
     
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
                 setOpen(false);
+                setIsSuccess(false);
             }
         };
 
@@ -42,7 +96,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
 
     if(!open) return null;
 
-    if (type === 'driver') {
+    if (type === 'driver' && !success) {
       return (
         <div className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-gray-500 bg-opacity-75">
           <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
@@ -64,7 +118,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
           </div>
         </div>
       )
-    } else if (type === 'team') {
+    } else if (type === 'team'  && !success) {
       return (
         <div className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-gray-500 bg-opacity-75">
           <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
@@ -86,7 +140,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
           </div>
         </div>
       )
-    } else if (type === 'race') {
+    } else if (type === 'race'  && !success) {
       return (
         <div className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-gray-500 bg-opacity-75">
           <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
@@ -105,6 +159,26 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
                 Cancel
               </button>
             </div>
+          </div>
+        </div>
+      )
+    }
+    else if (success) {
+      return(
+        <div className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-gray-500 bg-opacity-75">
+          <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
+            <h3>Model successfully added!</h3>
+          </div>
+        </div>
+      )
+    }
+
+    // FIX
+    else if (fail) {
+      return(
+        <div className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-gray-500 bg-opacity-75">
+          <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
+            <h3>Failed! Model not added!</h3>
           </div>
         </div>
       )

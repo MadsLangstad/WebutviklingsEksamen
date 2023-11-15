@@ -10,6 +10,7 @@ const Home: React.FC = () => {
   const [isDriveModalOpen, setIsDriveModalOpen] = useState(false);
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
   const [isRaceModalOpen, setIsRaceModalOpen] = useState(false);
+  const [isStatusMessageModalOpen, setIsStatusMessageModalOpen] = useState(false);
 
   const toggleLightDarkMode = () => {
     const h1Elements = document.querySelectorAll('h1');
@@ -40,6 +41,7 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Modal type="statusMessage" data={ null } open={isStatusMessageModalOpen} setOpen={setIsStatusMessageModalOpen} />
 
       <div className="flex flex-row justify-end mt-10 mr-10">
         <svg xmlns="http://www.w3.org/2000/svg" fill={ isLightMode ? 'none' : 'black' } viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-6 h-6 mr-8${ isLightMode ? '' : ' cursor-pointer'}`} onClick={() => toggleLightDarkMode()}>

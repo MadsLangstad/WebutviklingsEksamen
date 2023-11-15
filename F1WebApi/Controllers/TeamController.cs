@@ -96,4 +96,41 @@ public class TeamController : ControllerBase
             return StatusCode(500);
         }
     }
+
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Team>> Put(int id, [FromBody] Team updatedTeam)
+    {
+        if (updatedTeam == null)
+        {
+            return BadRequest("Team data is null.");
+        }
+
+        try
+        {
+            var team = await context.Teams.FindAsync(id);
+            if (team == null)
+            {
+                return NotFound($"Team with Id = {id} not found.");
+            }
+
+            // Updating properties
+            team.FullTeamName = updatedTeam.FullTeamName;
+            team.Base = updatedTeam.Base;
+            team.WorldChampionships = updatedTeam.WorldChampionships;
+
+            // ... Update other properties as needed
+
+            context.Teams.Update(team);
+            await context.SaveChangesAsync();
+
+            return Ok(team);
+        }
+        catch (Exception ex)
+        {
+            // Log the exception details
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+
 }

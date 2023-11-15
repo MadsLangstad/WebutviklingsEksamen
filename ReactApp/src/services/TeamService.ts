@@ -15,31 +15,40 @@ type Team = {
 }
 
 const TeamService = (() => {
-  const teamController = "http://localhost:5143/api/Team";
+  const teamController = "http://localhost:5143/api/team";
 
   const getAllTeams = async (): Promise<Team[]> => {
     const result: AxiosResponse<Team[]> = await axios.get(teamController);
-    console.log(result);
     return result.data;
   };
-
+      
   const addTeam = async (teamName: string, teamChief: string): Promise<Team> => {
+      
+      const result: AxiosResponse<Team> = await axios.post(teamController, {
+        fullTeamName: teamName,
+        teamChief: teamChief,
+      });
+      return result;
+  };
 
-    axios.post(teamController, {
-      FullTeamName: teamName,
-      TeamChief: teamChief,
-    })
-    .then(function (response) { 
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+
+  const deleteTeam = async (id: number): Promise<void> => {
+    await axios.delete(`${teamController}/${id}`);
+  };
+
+
+  const updateTeam = async (id: number, updatedTeam: Team): Promise<Team> => {
+    const result: AxiosResponse<Team> = await axios.put(`${teamController}/${id}`, updatedTeam);
+    console.log(updatedTeam);
+    console.log(result.data);
+    return result.data;
   };
 
   return {
     getAllTeams,
-    addTeam
+    addTeam,
+    deleteTeam,
+    updateTeam
   };
 })();
 

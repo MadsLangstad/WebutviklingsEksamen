@@ -24,6 +24,7 @@ const TeamList: React.FC = () => {
         <TeamItem
           key={team.id}
           team={team}
+          service={TeamService}
         />
       ))}
     </>

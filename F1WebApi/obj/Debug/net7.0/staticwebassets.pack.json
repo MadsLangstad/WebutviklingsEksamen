@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets/images/Races/japan_circuit.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/kristiania logo.png",
+      "PackagePath": "staticwebassets/images/Races/kristiania logo.png"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/mexico_circuit.png",
       "PackagePath": "staticwebassets/images/Races/mexico_circuit.png"
     },

@@ -24,6 +24,7 @@ const RaceList: React.FC = () => {
         <RaceItem
           key={race.id}
           race={race}
+          service={RaceService}
         />
       ))}
     </>

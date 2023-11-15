@@ -68,3 +68,4 @@
 /Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/obj/Debug/net7.0/F1WebApi.genruntimeconfig.cache
 /Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/obj/Debug/net7.0/ref/F1WebApi.dll
 /Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/bin/Debug/net7.0/F1WebApi.staticwebassets.runtime.json
+/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/obj/Debug/net7.0/F1WebApi.sourcelink.json

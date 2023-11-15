@@ -96,4 +96,40 @@ public class RaceController : ControllerBase
             return StatusCode(500);
         }
     }
+
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Race>> Put(int id, [FromBody] Race updatedRace)
+    {
+        if (updatedRace == null)
+        {
+            return BadRequest("Race data is null.");
+        }
+
+        try
+        {
+            var race = await context.Races.FindAsync(id);
+            if (race == null)
+            {
+                return NotFound($"Race with Id = {id} not found.");
+            }
+
+            // Updating properties
+            race.GrandPrix = updatedRace.GrandPrix;
+            race.Winner = updatedRace.Winner;
+            race.Laps = updatedRace.Laps;
+
+
+            context.Races.Update(race);
+            await context.SaveChangesAsync();
+
+            return Ok(race);
+        }
+        catch (Exception ex)
+        {
+            // Log the exception details
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+
 }

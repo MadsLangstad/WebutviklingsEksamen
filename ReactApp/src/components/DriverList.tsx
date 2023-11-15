@@ -24,6 +24,7 @@ const DriverList: React.FC = () => {
         <DriverItem
           key={driver.id}
           driver={driver}
+          service={DriverService}
         />
       ))}
     </>

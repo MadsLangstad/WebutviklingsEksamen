@@ -15,27 +15,35 @@ const RaceService = (() => {
 
   const getAllRaces = async (): Promise<Race[]> => {
     const result: AxiosResponse<Race[]> = await axios.get(raceController);
-    console.log(result);
     return result.data;
   };
 
-
   const addRace = async (raceCircuit: string, numberOfLaps: number):Promise<Race> => {
-    axios.post(raceController, {
+
+    const result: AxiosResponse<Race> = await axios.post(raceController, {
       grandPrix: raceCircuit,
       laps: numberOfLaps,
-    })
-    .then(function (response) { 
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
     });
-  }
+    return result;
+    }
+
+
+    const deleteRace = async (id: number): Promise<void> => {
+      await axios.delete(`${raceController}/${id}`);
+    };
+
+
+    const editRace = async (id: number, updatedRace: Race): Promise<Race> => {
+      const result: AxiosResponse<Race> = await axios.put(`${raceController}/${id}`, updatedRace);
+      
+      return result.data;
+    };
 
   return {
     getAllRaces,
-    addRace
+    addRace,
+    deleteRace,
+    editRace
   };
 })();
 
