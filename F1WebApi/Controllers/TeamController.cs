@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
-public class TeamController : ControllerBase
+public class TeamsController : ControllerBase
 {
     private readonly F1Context context;
 
-    public TeamController(F1Context _context)
+    public TeamsController(F1Context _context)
     {
         context = _context;
     }

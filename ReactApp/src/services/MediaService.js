@@ -3,8 +3,8 @@
 // const MediaService = (() => {
 
 //     const driverController = "http://localhost:5143/api/driver";
-//     // const teamController = "http://localhost:5143/api/team";
-//     // const raceController = "http://localhost:5143/api/race";
+//     const teamController = "http://localhost:5143/api/team";
+//     const raceController = "http://localhost:5143/api/race";
 
 //     const getMedia = async () => {
 //         try {

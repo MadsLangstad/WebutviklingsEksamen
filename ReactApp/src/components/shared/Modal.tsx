@@ -164,7 +164,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
             <input id="team-base" type="text" value={teamBase} onChange={event => {setTeamBase(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
             
             <label className="block text-sm font-medium text-gray-700" htmlFor="team-world-championships">Team world-championships</label>
-            <input id="team-world-championships" type="" value={teamWorldChampionships} onChange={event => {setTeamWorldChampionships(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
+            <input id="team-world-championships" type="number" value={teamWorldChampionships} onChange={event => {setTeamWorldChampionships(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
           
           </div>
           <div className="mt-4">

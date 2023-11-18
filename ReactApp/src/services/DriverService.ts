@@ -9,31 +9,38 @@ type Driver = {
 }
 
 const DriverService = (() => {
-  const driverController = "http://localhost:5143/api/drivers";
+
+  const apiPath = '/drivers';
+  let controller;
+
+  const initialize = (baseApiUrl) => {
+    controller = baseApiUrl + apiPath;
+  };
 
   const getAllDrivers = async (): Promise<Driver[]> => {
-    const result: AxiosResponse<Driver[]> = await axios.get(driverController);
+    const result: AxiosResponse<Driver[]> = await axios.get(controller);
     return result.data;
   };
 
   const addDriver = async (driver: Driver): Promise<Driver> => {
-    const result: AxiosResponse<Driver> = await axios.post(driverController, driver);
+    const result: AxiosResponse<Driver> = await axios.post(controller, driver);
     return result;
   }
 
   const deleteDriver = async (id: number): Promise<void> => {
-    const result = await axios.delete(`${driverController}/${id}`);
+    const result = await axios.delete(`${controller}/${id}`);
     return result;
   };
 
   const updateDriver = async (driver: Driver): Promise<Driver> => {
-    const result: AxiosResponse<Driver> = await axios.put(`${driverController}/${driver.id}`, driver);
+    const result: AxiosResponse<Driver> = await axios.put(`${controller}/${driver.id}`, driver);
     return result;
   };
 
   // Edit Driver
 
   return {
+    initialize,
     getAllDrivers,
     addDriver,
     deleteDriver,

@@ -38,6 +38,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
   const [races, setRaces] = useState<IRace[]>([]);
   const [teams, setTeams] = useState<ITeam[]>([]);
 
+  const baseUrl = 'http://localhost:5001';
+  const baseApiUrl = baseUrl + '/api';
+
   const statusCodes = {
     OK: [
       200,
@@ -50,8 +53,12 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
   };
 
   useEffect(() => {
+    DriverService.initialize(baseApiUrl);
+    RaceService.initialize(baseApiUrl);
+    TeamService.initialize(baseApiUrl);
+
     fetchInitialData();
-  }, []);
+  }, [baseApiUrl]);
 
   const fetchInitialData = async () => {
     const driversFromService = await DriverService.getAllDrivers();
@@ -183,10 +190,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
     }
   }
 
-
-
   return (
-    <DataContext.Provider value={{ 
+    <DataContext.Provider value={{
+      baseUrl,
       drivers, 
       setDriversData,
       addDriver, 

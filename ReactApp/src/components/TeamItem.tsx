@@ -5,7 +5,7 @@ const TeamItem: React.FC<TeamItemProps> = ({
     team
   }) => {
 
-    const { teams, setTeamsData } = useContext(DataContext);
+    const { baseUrl, teams, setTeamsData } = useContext(DataContext);
     const context = useContext(DataContext);
     const [isConfirmingDelete, setIsConfirmingDelete] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
@@ -56,7 +56,7 @@ const TeamItem: React.FC<TeamItemProps> = ({
           <div className="text-black dark:text-gray-400 font-bold text-2xl font-mono mb-2">{team.fullTeamName}</div>
           <p className="text-black dark:text-gray-400 text-base">Base: {team.base}</p>
           <p className="text-black dark:text-gray-400 text-base">World championships: {team.worldChampionships}</p>
-          <img src={`http://localhost:5143/images/teams/${team.image}`} alt="" />
+          <img src={`${baseUrl}/images/teams/${team.image}`} alt="" />
 
           <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
           <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>

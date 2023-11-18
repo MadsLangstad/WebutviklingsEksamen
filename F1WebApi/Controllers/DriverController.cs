@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
-public class DriverController : ControllerBase
+public class DriversController : ControllerBase
 {
     private readonly F1Context context;
 
-    public DriverController(F1Context _context)
+    public DriversController(F1Context _context)
     {
         context = _context;
     }

@@ -4,7 +4,7 @@ import { DataContext } from '../contexts/DataContext';
 const RaceItem: React.FC<RaceItemProps> = ({
     race
   }) => {
-    const { races, setRacesData } = useContext(DataContext);
+    const { baseUrl, races, setRacesData } = useContext(DataContext);
     const context = useContext(DataContext);
     const [isConfirmingDelete, setIsConfirmingDelete] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
@@ -57,7 +57,7 @@ const RaceItem: React.FC<RaceItemProps> = ({
           <div className="text-black dark:text-gray-400 font-bold text-2xl font-mono mb-2">{race.grandPrix}</div>
           <p className="text-black dark:text-gray-400 text-base">Winner: {race.winner}</p>
           <p className="text-black dark:text-gray-400 text-base">Laps: {race.laps}</p>
-          <img src={`http://localhost:5143/images/races/${race.image}`} alt="" />
+          <img src={`${baseUrl}/images/races/${race.image}`} alt="" />
           <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
           <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
 

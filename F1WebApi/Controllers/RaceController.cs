@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
-public class RaceController : ControllerBase
+public class RacesController : ControllerBase
 {
     private readonly F1Context context;
 
-    public RaceController(F1Context _context)
+    public RacesController(F1Context _context)
     {
         context = _context;
     }
