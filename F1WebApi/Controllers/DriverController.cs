@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
-public class DriversController : ControllerBase
+public class DriverController : ControllerBase
 {
     private readonly F1Context context;
 
-    public DriversController(F1Context _context)
+    public DriverController(F1Context _context)
     {
         context = _context;
     }
@@ -110,7 +110,6 @@ public class DriversController : ControllerBase
             driver.Name = updatedDriver.Name;
             driver.Team = updatedDriver.Team;
             driver.Country = updatedDriver.Country;
-
 
             context.Drivers.Update(driver);
             await context.SaveChangesAsync();

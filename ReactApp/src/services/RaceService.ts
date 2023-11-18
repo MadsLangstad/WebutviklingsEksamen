@@ -3,11 +3,8 @@ import axios, { AxiosResponse } from 'axios';
 type Race = {
   id: number;
   grandPrix: string | null;
-  date: string;
   winner: string | null;
-  car: string | null;
   laps: string | null;
-  time: number;
 };
 
 const RaceService = (() => {
@@ -18,32 +15,27 @@ const RaceService = (() => {
     return result.data;
   };
 
-  const addRace = async (raceCircuit: string, numberOfLaps: number):Promise<Race> => {
-
-    const result: AxiosResponse<Race> = await axios.post(raceController, {
-      grandPrix: raceCircuit,
-      laps: numberOfLaps,
-    });
+  const addRace = async (race: Race):Promise<Race> => {
+    const result: AxiosResponse<Race> = await axios.post(raceController, race);
     return result;
-    }
+  }
 
+  const deleteRace = async (id: number): Promise<void> => {
+    const result = await axios.delete(`${raceController}/${id}`);
+    return result;
+  };
 
-    const deleteRace = async (id: number): Promise<void> => {
-      await axios.delete(`${raceController}/${id}`);
-    };
+  const updateRace = async (race: Race): Promise<Race> => {
+    const result: AxiosResponse<Race> = await axios.put(`${raceController}/${race.id}`, race);
+    return result;
+  };
 
-
-    const editRace = async (id: number, updatedRace: Race): Promise<Race> => {
-      const result: AxiosResponse<Race> = await axios.put(`${raceController}/${id}`, updatedRace);
-      
-      return result.data;
-    };
 
   return {
     getAllRaces,
     addRace,
     deleteRace,
-    editRace
+    updateRace
   };
 })();
 

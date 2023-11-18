@@ -1,3 +1,4 @@
+import { DataProvider } from './contexts/DataContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { About, Home, Game } from './pages'
 
@@ -8,14 +9,16 @@ function App() {
 
   return (
     <>
-      <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>}>Api</Route>
-          <Route path="/game" element={<Game/>}>Game</Route>
-          <Route path="/about" element={<About/>}>About</Route>
-        </Routes>
-      </BrowserRouter>
+        <DataProvider>
+            <Header />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home/>}>Api</Route>
+                    <Route path="/game" element={<Game/>}>Game</Route>
+                    <Route path="/about" element={<About/>}>About</Route>
+                </Routes>
+            </BrowserRouter>
+        </DataProvider>
     </>
   )
 }

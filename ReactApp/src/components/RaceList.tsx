@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import RaceService from '../services/RaceService';
+import React, { useContext  } from 'react';
+import { DataContext } from '../contexts/DataContext';
 import RaceItem from './RaceItem';
 
 const RaceList: React.FC = () => {
-  const [races, setRaces] = useState<RaceItem[]>([]);
-
-  useEffect(() => {
-    getRacesFromService();
-  }, []);
-
-  const getRacesFromService = async () => {
-    try {
-      const racesFromService = await RaceService.getAllRaces();
-      setRaces(racesFromService);
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
-  };
+    const { races } = useContext(DataContext);
 
   return (
     <>
@@ -24,7 +11,6 @@ const RaceList: React.FC = () => {
         <RaceItem
           key={race.id}
           race={race}
-          service={RaceService}
         />
       ))}
     </>

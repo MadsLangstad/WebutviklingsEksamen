@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import DriverService from '../services/DriverService';
+import React, { useContext } from 'react';
+import { DataContext } from '../contexts/DataContext';
 import DriverItem from './DriverItem';
 
 const DriverList: React.FC = () => {
-  const [drivers, setDrivers] = useState<DriverItem[]>([]);
-
-  useEffect(() => {
-    getDriversFromService();
-  }, []);
-
-  const getDriversFromService = async () => {
-    try {
-      const driversFromService = await DriverService.getAllDrivers();
-      setDrivers(driversFromService);
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
-  };
+  const { drivers } = useContext(DataContext);
 
   return (
     <>
@@ -24,7 +11,6 @@ const DriverList: React.FC = () => {
         <DriverItem
           key={driver.id}
           driver={driver}
-          service={DriverService}
         />
       ))}
     </>

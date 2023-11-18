@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import TeamService from '../services/TeamService';
+import React, { useContext  } from 'react';
+import { DataContext } from '../contexts/DataContext';
 import TeamItem from './TeamItem';
 
 const TeamList: React.FC = () => {
-  const [teams, setTeams] = useState<TeamItem[]>([]);
-
-  useEffect(() => {
-    getTeamsFromService();
-  }, []);
-
-  const getTeamsFromService = async () => {
-    try {
-      const teamsFromService = await TeamService.getAllTeams();
-      setTeams(teamsFromService);
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
-  };
+  const { teams } = useContext(DataContext);
 
   return (
     <>
@@ -24,7 +11,6 @@ const TeamList: React.FC = () => {
         <TeamItem
           key={team.id}
           team={team}
-          service={TeamService}
         />
       ))}
     </>
