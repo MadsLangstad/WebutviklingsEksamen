@@ -65,7 +65,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-4 p-4 justify-center place-items-center">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 justify-center place-items-center">
         <DriverList />
       </div>
 
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-5 md:grid-cols-4 gap-4 p-4 justify-center place-items-center">
+      <div className="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 justify-center place-items-center">
         <TeamList />
       </div>
 
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-4 p-4 justify-center place-items-center">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 justify-center place-items-center">
         <RaceList />
       </div>
 

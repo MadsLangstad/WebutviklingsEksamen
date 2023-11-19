@@ -115,9 +115,25 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
       
     };
 
+    if (success) {
+      const timer = setTimeout(() => {
+        setOpen(false);
+        setSuccess(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+
+    } else if (success === false) {
+      const timer = setTimeout(() => {
+        setSuccess(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [setOpen]);
+  }, [setOpen, success, setSuccess]);
 
   if(!open) return null;
 
@@ -216,7 +232,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
       </div>
     )
   }
-  else if (fail) {
+  else if (!success) {
     return(
       <div className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-gray-500 bg-opacity-75">
         <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">

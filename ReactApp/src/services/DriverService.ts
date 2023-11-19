@@ -37,8 +37,6 @@ const DriverService = (() => {
     return result;
   };
 
-  // Edit Driver
-
   return {
     initialize,
     getAllDrivers,

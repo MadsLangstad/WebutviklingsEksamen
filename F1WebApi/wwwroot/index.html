@@ -36,16 +36,18 @@
         </article>
 
         <aside class="endpoint-examples">
-            <h3>Endpoint Usage Example</h3>
+            <h3>Endpoint Usage Examples: Drivers</h3>
+
+            <p>Get all drivers</p>
+            <code>GET /api/drivers</code>
+            <p>Get driver by Id</p>
+            <code>GET /api/drivers/2</code>
+            <p>Get driver by name</p>
+            <code>GET /api/drivers?name=lewis</code>
             <pre>
-                <code>GET /api/drivers</code>
-            </pre>
-            <pre><code>{
-                "id": 1,
-                "name": "Lewis Hamilton",
-                "team": "Mercedes"
-                }
-            </code></pre>
+            <code>
+
+        </aside>
         </aside>
 
         <article id="examples">
@@ -56,13 +58,60 @@
         <aside class="results-ide">
             <h3>Results</h3>
             <div class="ide-container">
-                <pre><code>// Example API call result
+            <code>GET: localhost:port/api/drivers</code>
+                <pre><code>
 {
-  "id": 1,
-  "name": "Lewis Hamilton",
-  "team": "Mercedes"
-}</code></pre>
+        "id": 1,
+        "name": "Lewis Hamilton",
+        "team": "Mercedes",
+        "country": "United Kingdom",
+        "Image": "lewis-hamilton.png"
+},
+{
+        "id": 2,
+        "name": "Valtteri Bottas",
+        "team": "Mercedes",
+        "country": "Finland",
+        "Image": "valtteri-bottas.png"
+}
+.....
+               </code></pre>
             </div>
+
+            <div>
+                <code>GET by Id: localhost:port/api/drivers/4</code>
+                <pre><code>
+{
+       "id": 4,
+       "name": "Fernando Alonso",
+       "team": "Aston Martin",
+       "country": "Spain",
+       "Image": "fernando-alonso.png"
+}
+              </code></pre>
+            </div>
+        </aside>
+
+        <aside class="endpoint-examples">
+            <h3>Endpoint Usage Examples: Races</h3>
+
+            <p>Get all drivers</p>
+            <code>GET /api/drivers</code>
+            <p>Get driver by Id</p>
+            <code>GET /api/drivers/2</code>
+            <p>Get driver by name</p>
+            <code>GET /api/drivers?name=lewis</code>
+            <pre>
+            <code>
+{
+    "id": 1,
+    "name": "Lewis Hamilton",
+    "team": "Mercedes"
+    "country": "United Kingdom"
+    "Image": "lewis-hamilton.png"
+}
+            </code>
+            </pre>
         </aside>
 
         <aside class="endpoint-examples">
@@ -128,5 +177,14 @@
     </footer>
 
 </body>
+{
+"id": 1,
+"name": "Lewis Hamilton",
+"team": "Mercedes"
+"country": "United Kingdom"
+"Image": "lewis-hamilton.png"
+}
+</code>
+</pre>
 
 </html>
