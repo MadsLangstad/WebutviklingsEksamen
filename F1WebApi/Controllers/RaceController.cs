@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using WebutviklingsEksamen.Contexts;
 using WebutviklingsEksamen.Models;
 using Microsoft.EntityFrameworkCore;
-
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -85,8 +86,19 @@ public class RacesController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Race>> Post([FromForm] Race race, [FromForm] IFormFile? image)
+    public async Task<ActionResult<Race>> Post([FromForm(Name = "race")] string raceJson, [FromForm(Name = "image")] IFormFile? image)
     {
+        Race? race = JsonSerializer.Deserialize<Race>(raceJson, new JsonSerializerOptions()
+        {
+            NumberHandling = JsonNumberHandling.AllowReadingFromString |
+            JsonNumberHandling.WriteAsString
+        });
+
+        if (race == null)
+        {
+            return BadRequest("Race data is null.");
+        }
+
         try
         {
             if (image != null)

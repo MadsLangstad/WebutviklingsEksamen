@@ -25,7 +25,7 @@ const DriverService = (() => {
   const addDriver = async (driver: Driver, image: HTMLInputElement): Promise<Driver> => {
     const formData = new FormData();
 
-    formData.append('driver', driver);
+    formData.append('driver', JSON.stringify(driver));
     formData.append('image', image);
 
     const config = {

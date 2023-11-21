@@ -24,8 +24,8 @@ const TeamService = (() => {
       
   const addTeam = async (team: Team, image: HTMLInputElement): Promise<Team> => {
     const formData = new FormData();
-
-    formData.append('team', team);
+    
+    formData.append('team', JSON.stringify(team));
     formData.append('image', image);
 
     console.log(team);

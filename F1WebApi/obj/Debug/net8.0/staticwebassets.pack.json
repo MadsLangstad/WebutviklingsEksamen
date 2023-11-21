@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/images/drivers/alexander-albon.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/car.jpg",
+      "PackagePath": "staticwebassets/images/drivers/car.jpg"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/carlos-sainz.png",
       "PackagePath": "staticwebassets/images/drivers/carlos-sainz.png"
     },
@@ -193,6 +197,14 @@
       "PackagePath": "staticwebassets/images/teams/aston-martin.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/car.jpg",
+      "PackagePath": "staticwebassets/images/teams/car.jpg"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/massOfPeople.jpeg",
+      "PackagePath": "staticwebassets/images/teams/massOfPeople.jpeg"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/mclaren.png",
       "PackagePath": "staticwebassets/images/teams/mclaren.png"
     },
@@ -211,6 +223,18 @@
     {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/scuderia-ferrari.png",
       "PackagePath": "staticwebassets/images/teams/scuderia-ferrari.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space2.jpeg",
+      "PackagePath": "staticwebassets/images/teams/space2.jpeg"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/spaceK.jpeg",
+      "PackagePath": "staticwebassets/images/teams/spaceK.jpeg"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/tennis.jpeg",
+      "PackagePath": "staticwebassets/images/teams/tennis.jpeg"
     },
     {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/williams-racing.png",

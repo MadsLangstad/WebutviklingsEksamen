@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using WebutviklingsEksamen.Contexts;
 using WebutviklingsEksamen.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -84,8 +86,19 @@ public class TeamsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Team>> Post([FromForm] Team team, [FromForm] IFormFile? image)
+    public async Task<ActionResult<Team>> Post([FromForm(Name = "team")] string teamJson, [FromForm(Name = "image")] IFormFile? image)
     {
+        Team? team = JsonSerializer.Deserialize<Team>(teamJson, new JsonSerializerOptions()
+        {
+            NumberHandling = JsonNumberHandling.AllowReadingFromString |
+            JsonNumberHandling.WriteAsString
+        });
+
+        if (team == null)
+        {
+            return BadRequest("Team data is null.");
+        }
+
         try
         {
             if (image != null)

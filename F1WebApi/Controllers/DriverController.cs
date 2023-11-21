@@ -4,17 +4,20 @@ using Microsoft.AspNetCore.Mvc;
 using WebutviklingsEksamen.Contexts;
 using WebutviklingsEksamen.Models;
 using Microsoft.EntityFrameworkCore;
-
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 [ApiController]
 [Route("api/[controller]")]
 public class DriversController : ControllerBase
 {
     private readonly F1Context context;
+    private readonly IWebHostEnvironment environment;
 
-    public DriversController(F1Context _context)
+    public DriversController(F1Context _context, IWebHostEnvironment _environment)
     {
         context = _context;
+        environment = _environment;
     }
 
     [HttpGet]
@@ -83,11 +86,40 @@ public class DriversController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Driver>> Post([FromBody] Driver driver)
+    public async Task<ActionResult<Driver>> Post([FromForm(Name = "driver")] string driverJson, [FromForm(Name = "image")] IFormFile? image)
     {
-        var result = await context.Drivers.AddAsync(driver); ;
-        await context.SaveChangesAsync();
-        return Ok(result.Entity);
+        Driver? driver = JsonSerializer.Deserialize<Driver>(driverJson, new JsonSerializerOptions()
+        {
+            NumberHandling = JsonNumberHandling.AllowReadingFromString |
+            JsonNumberHandling.WriteAsString
+        });
+
+        if (driver == null)
+        {
+            return BadRequest("Driver data is null.");
+        }
+
+        try
+        {
+            if (image != null)
+            {
+                string webRootPath = environment.WebRootPath;
+                string absolutePath = Path.Combine($"{webRootPath}/images/drivers", image.FileName);
+
+                using (var stream = new FileStream(absolutePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+            }
+
+            var result = await context.Drivers.AddAsync(driver); ;
+            await context.SaveChangesAsync();
+            return Ok(result.Entity);
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
     }
 
     [HttpPut("{id}")]

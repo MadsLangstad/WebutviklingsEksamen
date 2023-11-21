@@ -25,7 +25,7 @@ const RaceService = (() => {
   const addRace = async (race: Race, image: HTMLInputElement):Promise<Race> => {
     const formData = new FormData();
     
-    formData.append('race', race);
+    formData.append('race', JSON.stringify(race));
     formData.append('image', image);
     
     console.log(race);
