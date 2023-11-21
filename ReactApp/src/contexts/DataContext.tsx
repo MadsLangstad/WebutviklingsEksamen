@@ -7,18 +7,21 @@ interface IDriver {
   name: string;
   team: string;
   country: string;
+  image: string;
 }
 
 interface IRace {
   grandPrix: string;
   winner: string;
   laps: number;
+  image: string;
 }
 
 interface ITeam {
   fullTeamName: string;
   base: string;
   worldChampionships: number;
+  image: string;
 }
 
 interface DataContextType {
@@ -83,9 +86,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
   }
 
   // Driver CRUD
-  const addDriver = async (driver) => {
+  const addDriver = async (driverName, driverTeam, driverCountry, driverImage) => {
     try {
-      const result = await DriverService.addDriver(driver);
+      const result = await DriverService.addDriver(driverName, driverTeam, driverCountry, driverImage);
 
       if(statusCodes.OK.includes(result.status)) {
         return result.data;
@@ -120,9 +123,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
 
 
   // Race CRUD
-  const addRace = async (raceGrandPrix, raceWinner, raceLaps) => {
+  const addRace = async (raceGrandPrix, raceWinner, raceLaps, raceImage) => {
     try {
-      const result = await RaceService.addRace(raceGrandPrix, raceWinner, raceLaps);
+      const result = await RaceService.addRace(raceGrandPrix, raceWinner, raceLaps, raceImage);
       if(statusCodes.OK.includes(result.status)) {
         return result.data;
       }
@@ -179,9 +182,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
     }
   }
 
-  const updateTeam = async (teamId, teamName, teamBase, teamChampionships) => {
+  const updateTeam = async (teamId, teamName, teamBase, teamChampionships, teamImage) => {
     try {
-      const result = await TeamService.updateTeam(teamId, teamName, teamBase, teamChampionships);
+      const result = await TeamService.updateTeam(teamId, teamName, teamBase, teamChampionships, teamImage);
       if(statusCodes.OK.includes(result.status)) {
         return true;
       }

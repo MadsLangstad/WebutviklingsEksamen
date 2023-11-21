@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
     return (
-        <header className="sticky top-0 z-10 flex items-center justify-between h-20 px-5 bg-black text-white border-4 border-black">
+        <header className="sticky top-0 z-10 flex items-center justify-between h-20 px-5 bg-black text-white  border-4 border-black">
             <div className="flex items-center">
                 <h1 className="text-3xl m-0 text-white ">Formula One</h1>
             </div>

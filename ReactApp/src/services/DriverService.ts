@@ -5,7 +5,7 @@ type Driver = {
   name: string | null;
   team: string | null;
   country: string | null;
-  driverImage: string | null;
+  image: string | null;
 }
 
 const DriverService = (() => {
@@ -22,8 +22,19 @@ const DriverService = (() => {
     return result.data;
   };
 
-  const addDriver = async (driver: Driver): Promise<Driver> => {
-    const result: AxiosResponse<Driver> = await axios.post(controller, driver);
+  const addDriver = async (driver: Driver, image: HTMLInputElement): Promise<Driver> => {
+    const formData = new FormData();
+
+    formData.append('driver', driver);
+    formData.append('image', image);
+
+    const config = {
+        headers: {
+            'content-type': 'multipart/form-data'
+        }
+    }
+
+    const result: AxiosResponse<Driver> = await axios.post(controller, formData, config);
     return result;
   }
 

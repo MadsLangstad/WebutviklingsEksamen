@@ -16,26 +16,36 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
   const [driverName, setDriverName] = useState("");
   const [driverTeam, setDriverTeam] = useState("");
   const [driverCountry, setDriverCountry] = useState("");
+  const [driverImage, setDriverImage] = useState<File | null>(null);
 
   // Team
   const [teamName, setTeamName] = useState("");
   const [teamBase, setTeamBase] = useState("");
   const [teamWorldChampionships, setTeamWorldChampionships] = useState(0);
+  const [teamImage, setTeamImage] = useState<File | null>(null);
 
   // Race
   const [raceGrandPrix, setRaceGrandPrix] = useState("");
   const [raceWinner, setRaceWinner] = useState("");
   const [raceLaps, setRaceLaps] = useState(0);
-  
+  const [raceImage, setRaceImage] = useState<File | null>(null);
+
   // status 
   const [success, setSuccess] = useState(false);
+
+
+  const handleDriverImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files ? event.target.files[0] : null;
+    setDriverImage(file);
+  }
 
   const addDriver = async () => {
     try {
       const driver = {
         name: driverName,
         team: driverTeam,
-        country: driverCountry
+        country: driverCountry,
+        image: driverImage.name
       };
 
       const res = await context.addDriver(driver);
@@ -45,6 +55,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
         setDriverName("");
         setDriverTeam("");
         setDriverCountry("");
+        setDriverImage(null);
 
         driver.id = res.id;
 
@@ -55,21 +66,30 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
     }
   }
 
+
+  const handleTeamImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files ? event.target.files[0] : null;
+    setTeamImage(file);
+  };
+
   const addTeam = async () => {
     try {
       const team = {
         fullTeamName: teamName,
         base: teamBase,
-        worldChampionships: teamWorldChampionships
+        worldChampionships: teamWorldChampionships,
+        image: teamImage.name
       };
 
-      const res = await context.addTeam(team);
+      const res = await context.addTeam(team, teamImage);
       
       if(res !== false) {
         setSuccess(res);
         setTeamName("");
         setTeamBase("");
         setTeamWorldChampionships(0);
+        setTeamImage(null);
+        
 
         team.id = res.id;
 
@@ -79,22 +99,30 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
       console.error('AddTeam api call failed', error)
     }
   }
-      
+  
+
+  const handleRaceImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files ? event.target.files[0] : null;
+    setRaceImage(file);
+  };
+
   const addRace = async () => {
     try {
       const race = {
         grandPrix: raceGrandPrix,
         winner: raceWinner,
-        laps: raceLaps
+        laps: raceLaps,
+        image: raceImage.name
       };
 
-      const res = await context.addRace(race);
+      const res = await context.addRace(race, raceImage);
       
       if(res !== false) {
         setSuccess(res);
         setRaceGrandPrix("");
         setRaceWinner("");
         setRaceLaps(0);
+        setRaceImage(null);
 
         race.id = res.id;
 
@@ -150,9 +178,12 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
             <label className="block text-sm font-medium text-gray-700" htmlFor="driver-team">Driver Team</label>
             <input id="driver-team" type="text" value={driverTeam} onChange={event => {setDriverTeam(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
             
-            <label className="block text-sm font-medium text-gray-700" htmlFor="driver-country">Country</label>
+            <label className="block text-sm font-medium text-gray-700" htmlFor="driver-country">Driver Country</label>
             <input id="driver-country" type="text" value={driverCountry} onChange={event => {setDriverCountry(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
           
+            <label className="block text-sm font-medium text-gray-700" htmlFor="driver-image">Driver Image</label>
+            <input id="driver-image" type="file" onChange={handleDriverImageChange} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
+
           </div>
           
           <div className="mt-4">
@@ -181,7 +212,11 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
             
             <label className="block text-sm font-medium text-gray-700" htmlFor="team-world-championships">Team world-championships</label>
             <input id="team-world-championships" type="number" value={teamWorldChampionships} onChange={event => {setTeamWorldChampionships(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
+
+            <label className="block text-sm font-medium text-gray-700" htmlFor="team-image">Team Image</label>
+            <input id="team-image" type="file" onChange={handleTeamImageChange} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
           
+
           </div>
           <div className="mt-4">
             <button onClick={() => addTeam()} className="inline-flex justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
@@ -209,8 +244,11 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
           
             <label className="block text-sm font-medium text-gray-700" htmlFor="race-laps">Number Of Laps</label>
             <input id="race-laps" type="number" value={raceLaps} onChange={event => {setRaceLaps(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
-          
+
+            <label className="block text-sm font-medium text-gray-700" htmlFor="race-image">Race Image</label>
+            <input id="race-image" type="file" onChange={handleRaceImageChange} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
           </div>
+          
           <div className="mt-4">
             <button onClick={() => addRace()} className="inline-flex justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
               Add

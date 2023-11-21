@@ -5,6 +5,7 @@ type Team = {
   fullTeamName: string | null;
   base: string | null;
   worldChampionships: string | null;
+  image: string | null;
 }
 
 const TeamService = (() => {
@@ -21,8 +22,22 @@ const TeamService = (() => {
     return result.data;
   };
       
-  const addTeam = async (team: Team): Promise<Team> => {
-      const result: AxiosResponse<Team> = await axios.post(controller, team);
+  const addTeam = async (team: Team, image: HTMLInputElement): Promise<Team> => {
+    const formData = new FormData();
+
+    formData.append('team', team);
+    formData.append('image', image);
+
+    console.log(team);
+    console.log(image);
+
+    const config = {
+        headers: {
+            'content-type': 'multipart/form-data'
+        }
+    }
+    
+    const result: AxiosResponse<Team> = await axios.post(controller, formData, config);
       return result;
   };
 

@@ -32,7 +32,7 @@ const Home: React.FC = () => {
       document.body.classList.add('bg-white');
   
       h1Elements.forEach(element => {
-        element.style.color = 'black';
+        element.style.color = 'white';
       });
     }
   
