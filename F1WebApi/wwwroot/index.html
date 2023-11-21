@@ -8,26 +8,31 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body style="display: flex; flex-direction: column;;">
+<body style="display: flex; flex-direction: column; ">
 
-    <header style="position: sticky; top: 0;">
+    <header>
         <h1>F1 Web API Documentation</h1>
+        <nav style="position: sticky; top: 83px;">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#endpoints">Endpoints</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="http://localhost:5173">Home</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav style="position: sticky; top: 83px;">
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#endpoints">Endpoints</a></li>
-            <li><a href="#examples">Examples</a></li>
-            <li><a href="#errors">Error Codes</a></li>
-            <li><a href="http://localhost:5173">Home</a></li>
-        </ul>
-    </nav>
+
 
     <main>
         <article id="introduction">
-            <h2>Introduction</h2>
-            <p>This documentation will guide you through the usage of the F1 Web API.</p>
+            <div id="text-container">
+                <h2>Introduction</h2>
+                <p>This documentation will guide you through the usage of the F1 Web API. It provides information on
+                    available endpoints, how to interact with them, and includes code snippets and usage examples for
+                    the
+                    API.</p>
+            </div>
         </article>
 
         <article id="endpoints">
@@ -35,30 +40,26 @@
             <p>Information on available endpoints and how to interact with them.</p>
         </article>
 
+        <hr>
+
+        <!-- Drivers -->
         <aside class="endpoint-examples">
-            <h3>Endpoint Usage Examples: Drivers</h3>
+            <h3>Endpoints Drivers:</h3>
 
             <p>Get all drivers</p>
             <code>GET /api/drivers</code>
+
             <p>Get driver by Id</p>
             <code>GET /api/drivers/2</code>
+
             <p>Get driver by name</p>
             <code>GET /api/drivers?name=lewis</code>
-            <pre>
-            <code>
-
         </aside>
-        </aside>
-
-        <article id="examples">
-            <h2>Examples</h2>
-            <p>Code snippets and usage examples for the API.</p>
-        </article>
 
         <aside class="results-ide">
-            <h3>Results</h3>
+            <h3 id="examples">Examples</h3>
             <div class="ide-container">
-            <code>GET: localhost:port/api/drivers</code>
+                <code>GET: localhost:port/api/drivers</code>
                 <pre><code>
 {
         "id": 1,
@@ -92,99 +93,117 @@
             </div>
         </aside>
 
-        <aside class="endpoint-examples">
-            <h3>Endpoint Usage Examples: Races</h3>
+        <hr>
 
-            <p>Get all drivers</p>
-            <code>GET /api/drivers</code>
-            <p>Get driver by Id</p>
-            <code>GET /api/drivers/2</code>
-            <p>Get driver by name</p>
-            <code>GET /api/drivers?name=lewis</code>
-            <pre>
-            <code>
+        <!-- Teams -->
+        <aside class="endpoint-examples">
+            <h3>Endpoints Teams:</h3>
+
+            <p>Get all teams</p>
+            <code>GET /api/teams</code>
+
+            <p>Get team by Id</p>
+            <code>GET /api/teams/2</code>
+
+            <p>Get team by name</p>
+            <code>GET /api/teams?fullTeamName=ferrari</code>
+        </aside>
+
+        <aside class="results-ide">
+            <h3 id="examples">Examples</h3>
+            <div class="ide-container">
+                <code>GET: localhost:port/api/teams</code>
+                <pre><code>
 {
-    "id": 1,
-    "name": "Lewis Hamilton",
-    "team": "Mercedes"
-    "country": "United Kingdom"
-    "Image": "lewis-hamilton.png"
+    "id":1,
+    "fullTeamName":"Oracle Red Bull Racing",
+    "base":"Milton Keynes, United Kingdom",
+    "worldChampionships":"6",
+    "image":"red-bull.png"
+},
+{
+    "id":2,
+    "fullTeamName":"Mercedes-AMG PETRONAS F1 Team",
+    "base":"Brackley, United Kingdom",
+    "worldChampionships":"8",
+    "image":"amg-petronas.png"
+},
+.....
+               </code></pre>
+            </div>
+
+            <div>
+                <code>GET by Id: localhost:port/api/teams/4</code>
+                <pre><code>
+{
+    "id":4,
+    "fullTeamName":"McLaren Formula 1 Team",
+    "base":"Woking, United Kingdom",
+    "worldChampionships":"8",
+    "image":"mclaren.png"
 }
-            </code>
-            </pre>
-        </aside>
-
-        <aside class="endpoint-examples">
-            <h3>Endpoint Usage Example</h3>
-            <pre><code>GET /api/drivers</code></pre>
-            <pre><code>{
-  
-}</code></pre>
-        </aside>
-
-        <article id="examples">
-            <h2>Examples</h2>
-            <p>Code snippets and usage examples for the API.</p>
-        </article>
-
-        <aside class="results-ide">
-            <h3>Results</h3>
-            <div class="ide-container">
-                <pre><code>// Example API call result
-{
-  "id": 1,
-  "name": "Lewis Hamilton",
-  "team": "Mercedes"
-}</code></pre>
+              </code></pre>
             </div>
         </aside>
 
-        <aside class="endpoint-examples">
-            <h3>Endpoint Usage Example</h3>
-            <pre><code>GET /api/drivers</code></pre>
-            <pre><code>{
-  "id": 1,
-  "name": "Lewis Hamilton",
-  "team": "Mercedes"
-}</code></pre>
-        </aside>
+        <hr>
 
-        <article id="examples">
-            <h2>Examples</h2>
-            <p>Code snippets and usage examples for the API.</p>
-        </article>
+        <!-- Races -->
+        <aside class="endpoint-examples">
+            <h3>Endpoints Races:</h3>
+
+            <p>Get all races</p>
+            <code>GET /api/races</code>
+
+            <p>Get race by Id</p>
+            <code>GET /api/races/2</code>
+
+            <p>Get race by name</p>
+            <code>GET /api/race?grandPrix=bahrain</code>
+        </aside>
 
         <aside class="results-ide">
-            <h3>Results</h3>
+            <h3 id="examples">Examples</h3>
             <div class="ide-container">
-                <pre><code>// Example API call result
+                <code>GET: localhost:port/api/races</code>
+                <pre><code>
 {
-  "id": 1,
-  "name": "Lewis Hamilton",
-  "team": "Mercedes"
-}</code></pre>
+    "id":1,
+    "grandPrix":"Bahrain",
+    "winner":"Max Verstappen",
+    "laps":57,
+    "image":"bahrain_circuit.png"
+},
+{
+    "id":2,
+    "grandPrix":"Saudi Arabia",
+    "winner":"Sergio Perez",
+    "laps":50,
+    "image":"saudi.png"
+}
+.....
+               </code></pre>
+            </div>
+
+            <div>
+                <code>GET by Id: localhost:port/api/races/4</code>
+                <pre><code>
+{
+    "id":4,
+    "grandPrix":"Azerbaijan",
+    "winner":"Sergio Perez",
+    "laps":51,
+    "image":"azerbaijan.png"
+}
+              </code></pre>
             </div>
         </aside>
-
-        <article id="errors">
-            <h2>Error Codes</h2>
-            <p>Common API error codes and troubleshooting tips.</p>
-        </article>
     </main>
 
-    <footer style="margin-bottom: 0;">
+    <footer>
         <p>&copy; 2023 F1 Web API Documentation</p>
+        <a href="#introduction">top</a>
     </footer>
-
 </body>
-{
-"id": 1,
-"name": "Lewis Hamilton",
-"team": "Mercedes"
-"country": "United Kingdom"
-"Image": "lewis-hamilton.png"
-}
-</code>
-</pre>
 
 </html>

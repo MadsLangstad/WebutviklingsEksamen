@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0Zl0/FwSes9N4rN6Uu7U3u0hoFWWnW6XawfVPVOYxxA=",
+  "Hash": "01dKiiBSoxuyhsLiXbInJfN90oT79hFWjlvvQWj9a6o=",
   "Source": "F1WebApi",
   "BasePath": "_content/F1WebApi",
   "Mode": "Default",
@@ -416,12 +416,12 @@
       "OriginalItemSpec": "wwwroot/images/drivers/zhou-guanyu.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/australia_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/australia_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/australia_circuit.png",
+      "RelativePath": "images/races/australia_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -432,15 +432,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/australia_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/australia_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/austria_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/austria_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/austria_circuit.png",
+      "RelativePath": "images/races/austria_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -451,15 +451,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/austria_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/austria_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/azerbaijan.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/azerbaijan.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/azerbaijan.png",
+      "RelativePath": "images/races/azerbaijan.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -470,15 +470,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/azerbaijan.png"
+      "OriginalItemSpec": "wwwroot/images/races/azerbaijan.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/bahrain_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/bahrain_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/bahrain_circuit.png",
+      "RelativePath": "images/races/bahrain_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -489,15 +489,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/bahrain_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/bahrain_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/Belgium_Circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/Belgium_Circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/Belgium_Circuit.png",
+      "RelativePath": "images/races/Belgium_Circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -508,15 +508,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/Belgium_Circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/Belgium_Circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/brazil_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/brazil_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/brazil_circuit.png",
+      "RelativePath": "images/races/brazil_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -527,15 +527,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/brazil_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/brazil_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/great_britain_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/great_britain_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/great_britain_circuit.png",
+      "RelativePath": "images/races/great_britain_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -546,15 +546,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/great_britain_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/great_britain_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/hungary_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/hungary_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/hungary_circuit.png",
+      "RelativePath": "images/races/hungary_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -565,15 +565,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/hungary_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/hungary_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/italy_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/italy_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/italy_circuit.png",
+      "RelativePath": "images/races/italy_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -584,15 +584,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/italy_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/italy_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/japan_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/japan_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/japan_circuit.png",
+      "RelativePath": "images/races/japan_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -603,15 +603,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/japan_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/japan_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/kristiania logo.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/mexico_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/kristiania logo.png",
+      "RelativePath": "images/races/mexico_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -622,15 +622,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/kristiania logo.png"
+      "OriginalItemSpec": "wwwroot/images/races/mexico_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/mexico_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/miami.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/mexico_circuit.png",
+      "RelativePath": "images/races/miami.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -641,15 +641,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/mexico_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/miami.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/miami.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/monaco.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/miami.png",
+      "RelativePath": "images/races/monaco.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -660,15 +660,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/miami.png"
+      "OriginalItemSpec": "wwwroot/images/races/monaco.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/monaco.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/montreal.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/monaco.png",
+      "RelativePath": "images/races/montreal.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -679,15 +679,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/monaco.png"
+      "OriginalItemSpec": "wwwroot/images/races/montreal.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/montreal.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/netherlands_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/montreal.png",
+      "RelativePath": "images/races/netherlands_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -698,15 +698,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/montreal.png"
+      "OriginalItemSpec": "wwwroot/images/races/netherlands_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/netherlands_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/qatar.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/netherlands_circuit.png",
+      "RelativePath": "images/races/qatar.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -717,15 +717,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/netherlands_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/qatar.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/qatar.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/saudi.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/qatar.png",
+      "RelativePath": "images/races/saudi.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -736,15 +736,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/qatar.png"
+      "OriginalItemSpec": "wwwroot/images/races/saudi.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/saudi.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/singapore_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/saudi.png",
+      "RelativePath": "images/races/singapore_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -755,15 +755,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/saudi.png"
+      "OriginalItemSpec": "wwwroot/images/races/singapore_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/singapore_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spain_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/singapore_circuit.png",
+      "RelativePath": "images/races/spain_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -774,15 +774,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/singapore_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/spain_circuit.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/spain_circuit.png",
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/usa_circuit.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/spain_circuit.png",
+      "RelativePath": "images/races/usa_circuit.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -793,26 +793,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/spain_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/usa_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/Races/usa_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Races/usa_circuit.png"
+      "OriginalItemSpec": "wwwroot/images/races/usa_circuit.png"
     },
     {
       "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/alfa-romeo-team-stake.png",

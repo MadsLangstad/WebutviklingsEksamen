@@ -4,28 +4,33 @@
     box-sizing: border-box;
 }
 
+/* Text styling */
+h2,
+h3 {
+    color: #FF1801;
+}
+
+p {
+    color: white;
+}
+
+html {
+    background-color: #4b5563;
+}
+
 body {
-    font-family: 'Consolas', 'Monaco', monospace;
+    font-family: 'Roboto', 'Monaco', mono;
     line-height: 1.6;
-}
 
-header,
-nav,
-main,
-footer {
-    padding: 20px;
-    color: black;
-}
-
-li {
-    list-style: none;
-    color: black;
 }
 
 header {
     background: #000000;
-    text-align: center;
     color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header h1 {
@@ -34,7 +39,6 @@ header h1 {
 
 nav ul {
     list-style: none;
-    background-color: #960000;
     text-align: center;
 }
 
@@ -50,17 +54,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #000;
+    background-color: #FF1801;
+    color: black;
 }
 
 main {
-    padding-top: 20px;
+    display: grid;
+    margin: 100px;
 }
 
-main h2 {
-    margin-bottom: 15px;
-    color: #ffffff;
-}
 
 main p,
 main li {
@@ -68,12 +70,46 @@ main li {
     margin-bottom: 10px;
 }
 
+
+aside {
+    margin-bottom: 50px;
+}
+
+hr {
+    border: 1px solid #FF1801;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+code {
+    margin-bottom: 50px;
+}
+
+pre {
+    margin-top: 50px;
+}
+
+#text-container {
+    width: 30%;
+    margin: auto;
+}
+
+#text-container h2 {
+    margin-bottom: 20px;
+
+}
+
+#introduction {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .endpoint-examples,
 .results-ide {
     background: #545454;
-    border-left: 8px solid #960000;
+    border-left: 8px solid #FF1801;
     padding: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .ide-container {
@@ -97,11 +133,23 @@ code {
 }
 
 footer {
+    display: flex;
     text-align: center;
     padding: 10px;
-    background-color: #960000;
+    background-color: #FF1801;
+    margin-top: 50px;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #000;
 }
 
 footer p {
     color: #000;
+    margin: auto;
+}
+
+footer a {
+    color: #000;
+    margin-right: 100px;
+    text-decoration: none;
 }

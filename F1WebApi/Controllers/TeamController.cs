@@ -5,16 +5,17 @@ using WebutviklingsEksamen.Contexts;
 using WebutviklingsEksamen.Models;
 using Microsoft.EntityFrameworkCore;
 
-
 [ApiController]
 [Route("api/[controller]")]
 public class TeamsController : ControllerBase
 {
     private readonly F1Context context;
+    private readonly IWebHostEnvironment environment;
 
-    public TeamsController(F1Context _context)
+    public TeamsController(F1Context _context, IWebHostEnvironment _environment)
     {
         context = _context;
+        environment = _environment;
     }
 
     [HttpGet]
@@ -83,10 +84,20 @@ public class TeamsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Team>> Post([FromBody] Team team)
+    public async Task<ActionResult<Team>> Post([FromBody] Team team, [FromForm] IFormFile? image)
     {
         try
         {
+            if (image != null)
+            {
+                string webRootPath = environment.WebRootPath;
+                string absolutePath = Path.Combine($"{webRootPath}/images/teams/{image.FileName}");
+
+                using (var stream = new FileStream(absolutePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+            }
             var result = await context.Teams.AddAsync(team);
             await context.SaveChangesAsync();
             return Ok(result.Entity);
@@ -118,6 +129,7 @@ public class TeamsController : ControllerBase
             team.FullTeamName = updatedTeam.FullTeamName;
             team.Base = updatedTeam.Base;
             team.WorldChampionships = updatedTeam.WorldChampionships;
+            team.Image = updatedTeam.Image;
 
             // ... Update other properties as needed
 
@@ -132,5 +144,6 @@ public class TeamsController : ControllerBase
             return StatusCode(500, $"Internal server error: {ex.Message}");
         }
     }
+
 
 }

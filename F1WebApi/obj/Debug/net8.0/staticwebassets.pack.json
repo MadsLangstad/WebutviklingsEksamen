@@ -5,90 +5,6 @@
       "PackagePath": "staticwebassets/css/style.css"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/Belgium_Circuit.png",
-      "PackagePath": "staticwebassets/images/Races/Belgium_Circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/australia_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/australia_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/austria_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/austria_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/azerbaijan.png",
-      "PackagePath": "staticwebassets/images/Races/azerbaijan.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/bahrain_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/bahrain_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/brazil_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/brazil_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/great_britain_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/great_britain_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/hungary_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/hungary_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/italy_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/italy_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/japan_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/japan_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/kristiania logo.png",
-      "PackagePath": "staticwebassets/images/Races/kristiania logo.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/mexico_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/mexico_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/miami.png",
-      "PackagePath": "staticwebassets/images/Races/miami.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/monaco.png",
-      "PackagePath": "staticwebassets/images/Races/monaco.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/montreal.png",
-      "PackagePath": "staticwebassets/images/Races/montreal.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/netherlands_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/netherlands_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/qatar.png",
-      "PackagePath": "staticwebassets/images/Races/qatar.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/saudi.png",
-      "PackagePath": "staticwebassets/images/Races/saudi.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/singapore_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/singapore_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/spain_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/spain_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/Races/usa_circuit.png",
-      "PackagePath": "staticwebassets/images/Races/usa_circuit.png"
-    },
-    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/alexander-albon.png",
       "PackagePath": "staticwebassets/images/drivers/alexander-albon.png"
     },
@@ -167,6 +83,86 @@
     {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/zhou-guanyu.png",
       "PackagePath": "staticwebassets/images/drivers/zhou-guanyu.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/Belgium_Circuit.png",
+      "PackagePath": "staticwebassets/images/races/Belgium_Circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/australia_circuit.png",
+      "PackagePath": "staticwebassets/images/races/australia_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/austria_circuit.png",
+      "PackagePath": "staticwebassets/images/races/austria_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/azerbaijan.png",
+      "PackagePath": "staticwebassets/images/races/azerbaijan.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/bahrain_circuit.png",
+      "PackagePath": "staticwebassets/images/races/bahrain_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/brazil_circuit.png",
+      "PackagePath": "staticwebassets/images/races/brazil_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/great_britain_circuit.png",
+      "PackagePath": "staticwebassets/images/races/great_britain_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/hungary_circuit.png",
+      "PackagePath": "staticwebassets/images/races/hungary_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/italy_circuit.png",
+      "PackagePath": "staticwebassets/images/races/italy_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/japan_circuit.png",
+      "PackagePath": "staticwebassets/images/races/japan_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/mexico_circuit.png",
+      "PackagePath": "staticwebassets/images/races/mexico_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/miami.png",
+      "PackagePath": "staticwebassets/images/races/miami.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/monaco.png",
+      "PackagePath": "staticwebassets/images/races/monaco.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/montreal.png",
+      "PackagePath": "staticwebassets/images/races/montreal.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/netherlands_circuit.png",
+      "PackagePath": "staticwebassets/images/races/netherlands_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/qatar.png",
+      "PackagePath": "staticwebassets/images/races/qatar.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/saudi.png",
+      "PackagePath": "staticwebassets/images/races/saudi.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/singapore_circuit.png",
+      "PackagePath": "staticwebassets/images/races/singapore_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spain_circuit.png",
+      "PackagePath": "staticwebassets/images/races/spain_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/usa_circuit.png",
+      "PackagePath": "staticwebassets/images/races/usa_circuit.png"
     },
     {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/alfa-romeo-team-stake.png",

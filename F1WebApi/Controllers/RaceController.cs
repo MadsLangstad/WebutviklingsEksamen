@@ -11,10 +11,12 @@ using Microsoft.EntityFrameworkCore;
 public class RacesController : ControllerBase
 {
     private readonly F1Context context;
+    private readonly IWebHostEnvironment environment;
 
-    public RacesController(F1Context _context)
+    public RacesController(F1Context _context, IWebHostEnvironment _environment)
     {
         context = _context;
+        environment = _environment;
     }
 
     [HttpGet]
@@ -83,10 +85,21 @@ public class RacesController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Race>> Post([FromBody] Race race)
+    public async Task<ActionResult<Race>> Post([FromForm] Race race, [FromForm] IFormFile? image)
     {
         try
         {
+            if (image != null)
+            {
+                string webRootPath = environment.WebRootPath;
+                string absolutePath = Path.Combine($"{webRootPath}/images/races/{image.FileName}");
+
+                using (var stream = new FileStream(absolutePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+            }
+
             var result = await context.Races.AddAsync(race);
             await context.SaveChangesAsync();
             return Ok(result.Entity);
@@ -118,6 +131,7 @@ public class RacesController : ControllerBase
             race.GrandPrix = updatedRace.GrandPrix;
             race.Winner = updatedRace.Winner;
             race.Laps = updatedRace.Laps;
+            race.Image = updatedRace.Image;
 
 
             context.Races.Update(race);
@@ -131,5 +145,12 @@ public class RacesController : ControllerBase
             return StatusCode(500, $"Internal server error: {ex.Message}");
         }
     }
+
+    // private string FixBase64ForImage(string Image)
+    // {
+    //     System.Text.StringBuilder sbText = new System.Text.StringBuilder(Image, Image.Length);
+    //     sbText.Replace("\r\n", String.Empty); sbText.Replace(" ", String.Empty);
+    //     return sbText.ToString();
+    // }
 
 }
