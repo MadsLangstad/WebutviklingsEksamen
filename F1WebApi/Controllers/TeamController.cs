@@ -84,7 +84,7 @@ public class TeamsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Team>> Post([FromBody] Team team, [FromForm] IFormFile? image)
+    public async Task<ActionResult<Team>> Post([FromForm] Team team, [FromForm] IFormFile? image)
     {
         try
         {
@@ -98,6 +98,7 @@ public class TeamsController : ControllerBase
                     await image.CopyToAsync(stream);
                 }
             }
+
             var result = await context.Teams.AddAsync(team);
             await context.SaveChangesAsync();
             return Ok(result.Entity);

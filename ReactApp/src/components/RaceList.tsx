@@ -3,7 +3,7 @@ import { DataContext } from '../contexts/DataContext';
 import RaceItem from './RaceItem';
 
 const RaceList: React.FC = () => {
-    const { races } = useContext(DataContext);
+  const { races } = useContext(DataContext);
 
   return (
     <>

@@ -125,6 +125,10 @@
       "PackagePath": "staticwebassets/images/races/japan_circuit.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/lifePill.png",
+      "PackagePath": "staticwebassets/images/races/lifePill.png"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/mexico_circuit.png",
       "PackagePath": "staticwebassets/images/races/mexico_circuit.png"
     },
@@ -157,8 +161,16 @@
       "PackagePath": "staticwebassets/images/races/singapore_circuit.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spaceK.jpeg",
+      "PackagePath": "staticwebassets/images/races/spaceK.jpeg"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spain_circuit.png",
       "PackagePath": "staticwebassets/images/races/spain_circuit.png"
+    },
+    {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/tennis.jpeg",
+      "PackagePath": "staticwebassets/images/races/tennis.jpeg"
     },
     {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/usa_circuit.png",

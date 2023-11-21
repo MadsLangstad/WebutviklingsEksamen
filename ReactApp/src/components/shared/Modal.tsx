@@ -45,10 +45,10 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
         name: driverName,
         team: driverTeam,
         country: driverCountry,
-        image: driverImage.name
+        image: (driverImage !== null ? driverImage.name : '')
       };
 
-      const res = await context.addDriver(driver);
+      const res = await context.addDriver(driver, driverImage);
 
       if(res !== false) {
         setSuccess(res);
@@ -78,7 +78,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
         fullTeamName: teamName,
         base: teamBase,
         worldChampionships: teamWorldChampionships,
-        image: teamImage.name
+        image: (teamImage !== null ? teamImage.name : '')
       };
 
       const res = await context.addTeam(team, teamImage);
@@ -90,7 +90,6 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
         setTeamWorldChampionships(0);
         setTeamImage(null);
         
-
         team.id = res.id;
 
         setTeamsData([...teams, team]);
@@ -112,7 +111,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
         grandPrix: raceGrandPrix,
         winner: raceWinner,
         laps: raceLaps,
-        image: raceImage.name
+        image: (raceImage !== null ? raceImage.name : '')
       };
 
       const res = await context.addRace(race, raceImage);

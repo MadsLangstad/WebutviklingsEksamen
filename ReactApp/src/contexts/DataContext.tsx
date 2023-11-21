@@ -86,9 +86,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
   }
 
   // Driver CRUD
-  const addDriver = async (driverName, driverTeam, driverCountry, driverImage) => {
+  const addDriver = async (driver: IDriver, image: HTMLInputElement) => {
     try {
-      const result = await DriverService.addDriver(driverName, driverTeam, driverCountry, driverImage);
+      const result = await DriverService.addDriver(driver, image);
 
       if(statusCodes.OK.includes(result.status)) {
         return result.data;
@@ -123,9 +123,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
 
 
   // Race CRUD
-  const addRace = async (raceGrandPrix, raceWinner, raceLaps, raceImage) => {
+  const addRace = async (race: IRace, image: HTMLInputElement) => {
     try {
-      const result = await RaceService.addRace(raceGrandPrix, raceWinner, raceLaps, raceImage);
+      const result = await RaceService.addRace(race, image);
       if(statusCodes.OK.includes(result.status)) {
         return result.data;
       }
@@ -159,9 +159,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
 
   // Team CRUD
 
-  const addTeam = async (team) => {
+  const addTeam = async (team: ITeam, image: HTMLInputElement) => {
     try {
-      const result = await TeamService.addTeam(team);
+      const result = await TeamService.addTeam(team, image);
       if(statusCodes.OK.includes(result.status)) {
         return result.data;
       }
@@ -182,9 +182,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
     }
   }
 
-  const updateTeam = async (teamId, teamName, teamBase, teamChampionships, teamImage) => {
+  const updateTeam = async (team) => {
     try {
-      const result = await TeamService.updateTeam(teamId, teamName, teamBase, teamChampionships, teamImage);
+      const result = await TeamService.updateTeam(team);
       if(statusCodes.OK.includes(result.status)) {
         return true;
       }
