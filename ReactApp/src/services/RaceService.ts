@@ -41,11 +41,6 @@ const RaceService = (() => {
     return result;
   }
 
-  // const addRace = async (race: Race):Promise<Race> => {
-  //   const result: AxiosResponse<Race> = await axios.post(controller, race);
-  //   return result;
-  // }
-
   const deleteRace = async (id: number): Promise<void> => {
     const result = await axios.delete(`${controller}/${id}`);
     return result;

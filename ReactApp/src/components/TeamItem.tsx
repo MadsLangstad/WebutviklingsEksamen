@@ -52,11 +52,11 @@ const TeamItem: React.FC<TeamItemProps> = ({
     }
 
     return (
-      <div key={team.id}  className="team-item max-w-sm rounded overflow-hidden min-h-[25rem] w-[20rem] text-center shadow-lg hover:scale-110 bg-slate-100 border-2 border-black dark:bg-gray-800 p-4 mb-20"> 
+      <div key={team.id}  className="team-item max-w-sm rounded overflow-hidden min-h-[27rem] w-[20rem] text-center shadow-lg hover:scale-110 bg-slate-100 border-2 border-black dark:bg-gray-800 p-4 mb-20"> 
           <div className="text-black dark:text-gray-400 font-bold text-2xl font-mono mb-2">{team.fullTeamName}</div>
           <p className="text-black dark:text-gray-400 text-base">Base: {team.base}</p>
           <p className="text-black dark:text-gray-400 text-base">World championships: {team.worldChampionships}</p>
-          <img src={`${baseUrl}/images/teams/${team.image}`} alt="" />
+          <img className="m-auto max-h-[15rem]" src={`${baseUrl}/images/teams/${team.image}`} alt="" />
 
           <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
           <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>

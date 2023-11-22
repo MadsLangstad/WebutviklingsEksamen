@@ -53,11 +53,11 @@ const RaceItem: React.FC<RaceItemProps> = ({
     }
 
     return (
-      <div key={race.id} className="race-item max-w-sm rounded overflow-hidden w-[20rem] text-center shadow-lg hover:scale-110 bg-slate-100 border-2 border-black dark:bg-gray-800 p-4 mb-20"> 
+      <div key={race.id} className="race-item max-w-sm rounded overflow-hidden min-h-[27rem] w-[20rem] text-center shadow-lg hover:scale-110 bg-slate-100 border-2 border-black dark:bg-gray-800 p-4 mb-20"> 
           <div className="text-black dark:text-gray-400 font-bold text-2xl font-mono mb-2">{race.grandPrix}</div>
           <p className="text-black dark:text-gray-400 text-base">Winner: {race.winner}</p>
           <p className="text-black dark:text-gray-400 text-base">Laps: {race.laps}</p>
-          <img src={`${baseUrl}/images/races/${race.image}`} alt="" />
+          <img className="m-auto max-h-[15rem]" src={`${baseUrl}/images/races/${race.image}`} alt="" />
           <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
           <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
 

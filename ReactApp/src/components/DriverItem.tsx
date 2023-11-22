@@ -51,11 +51,11 @@ const DriverItem: React.FC<DriverItemProps> = ({
   }
 
   return (
-        <div key={driver.id} className="driver-item max-w-sm rounded overflow-hidden w-[20rem] text-center shadow-lg bg-slate-100 border-2 border-black hover:scale-110 dark:bg-gray-800 p-4 mb-20"> 
+        <div key={driver.id} className="driver-item max-w-sm rounded overflow-hidden min-h-[27rem] w-[20rem] text-center shadow-lg bg-slate-100 border-2 border-black hover:scale-110 dark:bg-gray-800 p-4 mb-20"> 
             <div className="text-black dark:text-gray-400 font-bold text-2xl font-mono mb-2">{driver.name}</div>
                 <p className="text-black dark:text-gray-400 text-base">Team: {driver.team}</p>
                 <p className="text-black dark:text-gray-400 text-base">Country: {driver.country}</p>
-                <img src={`${baseUrl}/images/drivers/${driver.image}`} alt="" />
+                <img className="m-auto max-h-[15rem]" src={`${baseUrl}/images/drivers/${driver.image}`} alt="" />
                 <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
                 <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
 
