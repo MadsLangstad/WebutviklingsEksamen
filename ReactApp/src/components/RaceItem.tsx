@@ -11,6 +11,7 @@ const RaceItem: React.FC<RaceItemProps> = ({
     const [newGrandPrix, setNewGrandPrix] = useState(race.grandPrix ?? '');
     const [newWinner, setNewWinner] = useState(race.winner ?? '');
     const [newLaps, setNewLaps] = useState(race.laps ?? '');
+    const [newImage, setNewImage] = useState(race.image);
 
     const handleDeleteClick = () => {
       setIsConfirmingDelete(true);
@@ -34,16 +35,24 @@ const RaceItem: React.FC<RaceItemProps> = ({
     const confirmEdit = async () => {
       try {
         const updatedRace = {
-          ...race,
+          id: race.id,
           grandPrix: newGrandPrix,
           winner: newWinner,
           laps: newLaps,
+          image: (newImage !== null ? newImage.name : '')
         };
 
-        await context.updateRace(updatedRace);
-        setIsEditing(false);
+        const res = await context.updateRace(updatedRace, newImage);
+
+        if(res !== false) {
+          setNewGrandPrix('');
+          setNewWinner('');
+          setNewLaps('');
+          setNewImage(null);
+        }
 
         const updatedRaces = races.map(r => r.id === race.id ? updatedRace : r);
+
         setRacesData(updatedRaces);
 
       } catch (error) {
@@ -90,6 +99,12 @@ const RaceItem: React.FC<RaceItemProps> = ({
               value={newLaps} 
               onChange={(e) => setNewLaps(e.target.value)} 
               placeholder="laps"
+            />
+
+            <input
+              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
+              type="file"
+              onChange={(e) => setNewImage(e.target.files[0])}
             />
 
             <button className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg" onClick={confirmEdit}>Save Changes</button>

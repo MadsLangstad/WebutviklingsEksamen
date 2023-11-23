@@ -124,8 +124,14 @@ public class RacesController : ControllerBase
 
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Race>> Put(int id, [FromBody] Race updatedRace)
+    public async Task<ActionResult<Race>> Put(int id, [FromForm(Name = "race")] string raceJson, [FromForm(Name = "image")] IFormFile? image)
     {
+        Race? updatedRace = JsonSerializer.Deserialize<Race>(raceJson, new JsonSerializerOptions()
+        {
+            NumberHandling = JsonNumberHandling.AllowReadingFromString |
+            JsonNumberHandling.WriteAsString
+        });
+
         if (updatedRace == null)
         {
             return BadRequest("Race data is null.");
@@ -133,23 +139,41 @@ public class RacesController : ControllerBase
 
         try
         {
-            var race = await context.Races.FindAsync(id);
-            if (race == null)
+            if (image != null)
+            {
+                string webRootPath = environment.WebRootPath;
+                string absolutePath = Path.Combine($"{webRootPath}/images/races/{image.FileName}");
+
+                using (var stream = new FileStream(absolutePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+            }
+
+            var result = await context.Races.FindAsync(id);
+            if (result == null)
             {
                 return NotFound($"Race with Id = {id} not found.");
             }
 
             // Updating properties
-            race.GrandPrix = updatedRace.GrandPrix;
-            race.Winner = updatedRace.Winner;
-            race.Laps = updatedRace.Laps;
-            race.Image = updatedRace.Image;
+            var local = this.context.Set<Race>()
+                .Local
+                .FirstOrDefault(entry => entry.Id.Equals(id));
 
+            // Check if local is not null
+            if (local != null)
+            {
+                // Detach
+                this.context.Entry(local).State = EntityState.Detached;
+            }
 
-            context.Races.Update(race);
+            // Set modified flag in your entry
+            this.context.Entry(updatedRace).State = EntityState.Modified;
+
             await context.SaveChangesAsync();
 
-            return Ok(race);
+            return Ok(updatedRace);
         }
         catch (Exception ex)
         {
@@ -157,12 +181,4 @@ public class RacesController : ControllerBase
             return StatusCode(500, $"Internal server error: {ex.Message}");
         }
     }
-
-    // private string FixBase64ForImage(string Image)
-    // {
-    //     System.Text.StringBuilder sbText = new System.Text.StringBuilder(Image, Image.Length);
-    //     sbText.Replace("\r\n", String.Empty); sbText.Replace(" ", String.Empty);
-    //     return sbText.ToString();
-    // }
-
 }

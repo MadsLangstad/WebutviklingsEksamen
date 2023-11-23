@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets/images/drivers/logan-sargeant.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/massOfPeople.jpeg",
+      "PackagePath": "staticwebassets/images/drivers/massOfPeople.jpeg"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/max-verstappen.png",
       "PackagePath": "staticwebassets/images/drivers/max-verstappen.png"
     },

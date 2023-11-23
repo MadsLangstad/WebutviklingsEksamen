@@ -149,9 +149,10 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
     }
   }
 
-  const updateRace = async (race) => {
+  const updateRace = async (race: IRace, image: HTMLInputElement) => {
     try {
-      const result = await RaceService.updateRace(race);
+      const result = await RaceService.updateRace(race, image);
+      console.log(result);
       if(statusCodes.OK.includes(result.status)) {
         return true;
       }
@@ -196,6 +197,8 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
       console.error('Api call failed', error)
     }
   }
+
+
 
 
 

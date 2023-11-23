@@ -56,6 +56,7 @@ const TeamItem: React.FC<TeamItemProps> = ({
         const updatedTeams = teams.map(t => t.id === updatedTeam.id ? updatedTeam : t);
 
         setTeamsData(updatedTeams);
+        
       } catch (error) {
         console.error(`Error editing team: ${error}`);
       }

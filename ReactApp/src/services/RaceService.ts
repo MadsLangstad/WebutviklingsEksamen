@@ -46,8 +46,23 @@ const RaceService = (() => {
     return result;
   };
 
-  const updateRace = async (race: Race): Promise<Race> => {
-    const result: AxiosResponse<Race> = await axios.put(`${controller}/${race.id}`, race);
+  const updateRace = async (race: Race, image: HTMLInputElement): Promise<Race> => 
+  {
+    const formData = new FormData();
+
+    formData.append('race', JSON.stringify(race));
+    formData.append('image', image);
+
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    }
+
+    console.log('Race: ', race);
+    console.log('Image: ', image);
+
+    const result: AxiosResponse<Race> = await axios.put(`${controller}/${race.id}`, formData, config);
     return result;
   };
 
