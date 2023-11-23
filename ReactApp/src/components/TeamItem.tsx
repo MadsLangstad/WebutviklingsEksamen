@@ -34,7 +34,6 @@ const TeamItem: React.FC<TeamItemProps> = ({
       setIsEditing(true);
     }
   
-// Edit
     const confirmEdit = async () => {
       try {
         const updatedTeam = {
@@ -61,27 +60,6 @@ const TeamItem: React.FC<TeamItemProps> = ({
         console.error(`Error editing team: ${error}`);
       }
     }
-    
-// End edit
-
-    // const confirmEdit = async () => {
-    //   try {
-    //     const updatedTeam = {
-    //       ...team,
-    //       fullTeamName: newFullTeamName,
-    //       base: newBase,
-    //       worldChampionships: newWorldChampionships
-    //     };
-
-    //     await context.updateTeam(updatedTeam);
-    //     setIsEditing(false);
-
-    //     const updatedTeams = teams.map(t => t.id === team.id ? updatedTeam : t);
-    //     setTeamsData(updatedTeams);
-    //   } catch (error) {
-    //     console.error(`Error editing team: ${error}`);
-    //   }
-    // }
 
     return (
       <div key={team.id}  className="team-item max-w-sm rounded overflow-hidden min-h-[27rem] w-[20rem] text-center shadow-lg hover:scale-110 bg-slate-100 border-2 border-black dark:bg-gray-800 p-4 mb-20"> 
@@ -126,9 +104,9 @@ const TeamItem: React.FC<TeamItemProps> = ({
             />
 
             <input
+              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
               type="file"
               onChange={(e) => setNewImage(e.target.files[0])}
-              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
             />
 
 

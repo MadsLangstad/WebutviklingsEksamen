@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WlnXMWLX/AjokIN6OODlDBZX6fz7mp2HPW6bwtnEl78=",
+  "Hash": "MY9cBx6MqRygcNiTWOY2mJMxrQZpXbU1sFPrsgG+qHc=",
   "Source": "F1WebApi",
   "BasePath": "_content/F1WebApi",
   "Mode": "Default",
@@ -1098,6 +1098,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/teams/scuderia-ferrari.png"
+    },
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space.webp",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "images/teams/space.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/teams/space.webp"
     },
     {
       "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space2.jpeg",

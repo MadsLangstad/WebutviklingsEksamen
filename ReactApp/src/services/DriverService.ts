@@ -43,8 +43,19 @@ const DriverService = (() => {
     return result;
   };
 
-  const updateDriver = async (driver: Driver): Promise<Driver> => {
-    const result: AxiosResponse<Driver> = await axios.put(`${controller}/${driver.id}`, driver);
+  const updateDriver = async (driver: Driver, image: HTMLInputElement): Promise<Driver> => {
+    const formData = new FormData();
+
+    formData.append('driver', JSON.stringify(driver));
+    formData.append('image', image);
+
+    const config = {
+        headers: {
+            'content-type': 'multipart/form-data'
+        }
+    }
+
+    const result: AxiosResponse<Driver> = await axios.put(`${controller}/${driver.id}`, formData, config);
     return result;
   };
 

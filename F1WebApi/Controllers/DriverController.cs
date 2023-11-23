@@ -123,8 +123,14 @@ public class DriversController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Driver>> Put(int id, [FromForm] Driver updatedDriver, [FromForm(Name = "image")] IFormFile? image)
+    public async Task<ActionResult<Driver>> Put(int id, [FromForm(Name = "driver")] string driverJson, [FromForm(Name = "image")] IFormFile? image)
     {
+        Driver? updatedDriver = JsonSerializer.Deserialize<Driver>(driverJson, new JsonSerializerOptions()
+        {
+            NumberHandling = JsonNumberHandling.AllowReadingFromString |
+            JsonNumberHandling.WriteAsString
+        });
+
         if (updatedDriver == null)
         {
             return BadRequest("Driver data is null.");
@@ -132,17 +138,6 @@ public class DriversController : ControllerBase
 
         try
         {
-            var driver = await context.Drivers.FindAsync(id);
-            if (driver == null)
-            {
-                return NotFound($"Driver with Id = {id} not found.");
-            }
-
-            // Updating properties
-            driver.Name = updatedDriver.Name;
-            driver.Team = updatedDriver.Team;
-            driver.Country = updatedDriver.Country;
-
             if (image != null)
             {
                 string webRootPath = environment.WebRootPath;
@@ -152,14 +147,32 @@ public class DriversController : ControllerBase
                 {
                     await image.CopyToAsync(stream);
                 }
-
-                driver.Image = "/images/drivers/" + image.FileName; // Update the image path
             }
 
-            context.Drivers.Update(driver);
+            var result = await context.Drivers.FindAsync(id);
+            if (result == null)
+            {
+                return NotFound($"Driver with Id = {id} not found.");
+            }
+
+            // Updating properties
+            var local = this.context.Set<Driver>()
+                .Local
+                .FirstOrDefault(entry => entry.Id.Equals(id));
+
+            // Check if local is not null
+            if (local != null)
+            {
+                // Detach
+                this.context.Entry(local).State = EntityState.Detached;
+            }
+
+            // Set modified flag in your entry
+            this.context.Entry(updatedDriver).State = EntityState.Modified;
+
             await context.SaveChangesAsync();
 
-            return Ok(driver);
+            return Ok(updatedDriver);
         }
         catch (Exception ex)
         {

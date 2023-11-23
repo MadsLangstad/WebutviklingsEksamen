@@ -113,9 +113,9 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
     }
   }
 
-  const updateDriver = async (driver) => {
+  const updateDriver = async (driver: IDriver, image: HTMLInputElement) => {
     try {
-      const result = await DriverService.updateDriver(driver);
+      const result = await DriverService.updateDriver(driver, image);
       if(statusCodes.OK.includes(result.status)) {
         return true;
       }
@@ -196,6 +196,8 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
       console.error('Api call failed', error)
     }
   }
+
+
 
   return (
     <DataContext.Provider value={{

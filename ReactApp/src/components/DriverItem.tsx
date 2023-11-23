@@ -11,6 +11,7 @@ const DriverItem: React.FC<DriverItemProps> = ({
   const [newName, setNewName] = useState(driver.name);
   const [newTeam, setNewTeam] = useState(driver.team);
   const [newCountry, setNewCountry] = useState(driver.country);
+  const [newImage, setNewImage] = useState(driver.image);
 
   const handleDeleteClick = () => {
     setIsConfirmingDelete(true);
@@ -34,16 +35,27 @@ const DriverItem: React.FC<DriverItemProps> = ({
   const confirmEdit = async () => {
     try {
       const updatedDriver = {
-        ...driver,
+        id: driver.id,
         name: newName,
         team: newTeam,
         country: newCountry,
+        image: (newImage !== null ? newImage.name : '')
       };
   
+      const res = await context.updateDriver(updatedDriver, newImage);
+
+      if(res !== false) {
+        setNewName('');
+        setNewTeam('');
+        setNewCountry('');
+        setNewImage(null);
+      }
+
       await context.updateDriver(updatedDriver);
       setIsEditing(false);
       
-      const updatedDrivers = drivers.map(d => d.id === driver.id ? updatedDriver : d);
+      const updatedDrivers = drivers.map(d => d.id === updatedDriver.id ? updatedDriver : d);
+      
       setDriversData(updatedDrivers);
     } catch (error) {
       console.error(`Error editing driver: ${error}`);
@@ -90,7 +102,13 @@ const DriverItem: React.FC<DriverItemProps> = ({
           onChange={(e) => setNewCountry(e.target.value)} 
           placeholder="Country"
         />
-    
+
+        <input
+          className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
+          type="file"
+          onChange={(e) => setNewImage(e.target.files[0])}
+        />
+
         <button className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg" onClick={confirmEdit}>Save Changes</button>
         <button className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg" onClick={() => setIsEditing(false)}>Cancel</button>
       </div>

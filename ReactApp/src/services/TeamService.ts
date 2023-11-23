@@ -43,7 +43,8 @@ const TeamService = (() => {
     return result;
   };
 
-  const updateTeam = async (team: Team, image: HTMLInputElement): Promise<Team> => {
+  const updateTeam = async (team: Team, image: HTMLInputElement): Promise<Team> =>
+  {
     const formData = new FormData();
 
     formData.append('team', JSON.stringify(team));
@@ -61,12 +62,6 @@ const TeamService = (() => {
     const result: AxiosResponse<Team> = await axios.put(`${controller}/${team.id}`, formData, config);
     return result;
   };
-
-
-  // const updateTeam = async (team: Team): Promise<Team> => {
-  //   const result: AxiosResponse<Team> = await axios.put(`${controller}/${team.id}`, team);
-  //   return result;
-  // };
 
   return {
     initialize,

@@ -229,6 +229,10 @@
       "PackagePath": "staticwebassets/images/teams/scuderia-ferrari.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space.webp",
+      "PackagePath": "staticwebassets/images/teams/space.webp"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space2.jpeg",
       "PackagePath": "staticwebassets/images/teams/space2.jpeg"
     },
