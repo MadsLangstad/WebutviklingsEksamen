@@ -24,7 +24,6 @@ const RaceItem: React.FC<RaceItemProps> = ({
         setRacesData(races.filter(r => r.id !== race.id));
       } catch (error) {
         console.error(`Error deleting race: ${error}`);
-        // Handle error state
       }
     };
 

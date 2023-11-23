@@ -28,17 +28,14 @@ const TeamService = (() => {
     formData.append('team', JSON.stringify(team));
     formData.append('image', image);
 
-    console.log(team);
-    console.log(image);
-
     const config = {
-        headers: {
-            'content-type': 'multipart/form-data'
-        }
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
     }
     
     const result: AxiosResponse<Team> = await axios.post(controller, formData, config);
-      return result;
+    return result;
   };
 
   const deleteTeam = async (id: number): Promise<void> => {
@@ -46,10 +43,30 @@ const TeamService = (() => {
     return result;
   };
 
-  const updateTeam = async (team: Team): Promise<Team> => {
-    const result: AxiosResponse<Team> = await axios.put(`${controller}/${team.id}`, team);
+  const updateTeam = async (team: Team, image: HTMLInputElement): Promise<Team> => {
+    const formData = new FormData();
+
+    formData.append('team', JSON.stringify(team));
+    formData.append('image', image);
+
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    }
+
+    console.log("Team: ", team);
+    console.log("Image: ", image);
+
+    const result: AxiosResponse<Team> = await axios.put(`${controller}/${team.id}`, formData, config);
     return result;
   };
+
+
+  // const updateTeam = async (team: Team): Promise<Team> => {
+  //   const result: AxiosResponse<Team> = await axios.put(`${controller}/${team.id}`, team);
+  //   return result;
+  // };
 
   return {
     initialize,

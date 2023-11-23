@@ -4,6 +4,7 @@ import RaceService from '../services/RaceService';
 import TeamService from '../services/TeamService';
 
 interface IDriver {
+  id: number;
   name: string;
   team: string;
   country: string;
@@ -11,6 +12,7 @@ interface IDriver {
 }
 
 interface IRace {
+  id: number;
   grandPrix: string;
   winner: string;
   laps: number;
@@ -18,6 +20,7 @@ interface IRace {
 }
 
 interface ITeam {
+  id: number;
   fullTeamName: string;
   base: string;
   worldChampionships: number;
@@ -182,9 +185,10 @@ export const DataProvider: FC<DataProviderProps> = ({ children }) => {
     }
   }
 
-  const updateTeam = async (team) => {
+  const updateTeam = async (team: ITeam, image: HTMLInputElement) => {
     try {
-      const result = await TeamService.updateTeam(team);
+      const result = await TeamService.updateTeam(team, image);
+      console.log("result: ", result)
       if(statusCodes.OK.includes(result.status)) {
         return true;
       }

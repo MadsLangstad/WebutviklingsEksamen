@@ -123,7 +123,7 @@ public class DriversController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Driver>> Put(int id, [FromBody] Driver updatedDriver)
+    public async Task<ActionResult<Driver>> Put(int id, [FromForm] Driver updatedDriver, [FromForm(Name = "image")] IFormFile? image)
     {
         if (updatedDriver == null)
         {
@@ -142,6 +142,19 @@ public class DriversController : ControllerBase
             driver.Name = updatedDriver.Name;
             driver.Team = updatedDriver.Team;
             driver.Country = updatedDriver.Country;
+
+            if (image != null)
+            {
+                string webRootPath = environment.WebRootPath;
+                string absolutePath = Path.Combine($"{webRootPath}/images/drivers/", image.FileName);
+
+                using (var stream = new FileStream(absolutePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+
+                driver.Image = "/images/drivers/" + image.FileName; // Update the image path
+            }
 
             context.Drivers.Update(driver);
             await context.SaveChangesAsync();

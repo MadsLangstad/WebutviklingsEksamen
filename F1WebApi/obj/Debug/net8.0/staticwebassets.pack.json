@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets/images/drivers/lewis-hamilton.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lifePill.png",
+      "PackagePath": "staticwebassets/images/drivers/lifePill.png"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
       "PackagePath": "staticwebassets/images/drivers/logan-sargeant.png"
     },

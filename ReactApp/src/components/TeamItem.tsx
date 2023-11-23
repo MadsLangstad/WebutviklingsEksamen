@@ -12,6 +12,8 @@ const TeamItem: React.FC<TeamItemProps> = ({
     const [newFullTeamName, setNewFullTeamName] = useState(team.fullTeamName);
     const [newBase, setNewBase] = useState(team.base);
     const [newWorldChampionships, setNewWorldChampionships] = useState(team.worldChampionships);
+    const [newImage, setNewImage] = useState(team.image);
+
 
     const handleDeleteClick = () => {
       setIsConfirmingDelete(true);
@@ -32,24 +34,54 @@ const TeamItem: React.FC<TeamItemProps> = ({
       setIsEditing(true);
     }
   
+// Edit
     const confirmEdit = async () => {
       try {
         const updatedTeam = {
-          ...team,
+          id: team.id,
           fullTeamName: newFullTeamName,
           base: newBase,
-          worldChampionships: newWorldChampionships
+          worldChampionships: newWorldChampionships,
+          image: (newImage !== null ? newImage.name : '')
         };
+    
+        const res = await context.updateTeam(updatedTeam, newImage);
 
-        await context.updateTeam(updatedTeam);
-        setIsEditing(false);
+        if(res !== false) {
+          setNewFullTeamName('');
+          setNewBase('');
+          setNewWorldChampionships('');
+          setNewImage(null);
+        }
 
-        const updatedTeams = teams.map(t => t.id === team.id ? updatedTeam : t);
+        const updatedTeams = teams.map(t => t.id === updatedTeam.id ? updatedTeam : t);
+
         setTeamsData(updatedTeams);
       } catch (error) {
         console.error(`Error editing team: ${error}`);
       }
     }
+    
+// End edit
+
+    // const confirmEdit = async () => {
+    //   try {
+    //     const updatedTeam = {
+    //       ...team,
+    //       fullTeamName: newFullTeamName,
+    //       base: newBase,
+    //       worldChampionships: newWorldChampionships
+    //     };
+
+    //     await context.updateTeam(updatedTeam);
+    //     setIsEditing(false);
+
+    //     const updatedTeams = teams.map(t => t.id === team.id ? updatedTeam : t);
+    //     setTeamsData(updatedTeams);
+    //   } catch (error) {
+    //     console.error(`Error editing team: ${error}`);
+    //   }
+    // }
 
     return (
       <div key={team.id}  className="team-item max-w-sm rounded overflow-hidden min-h-[27rem] w-[20rem] text-center shadow-lg hover:scale-110 bg-slate-100 border-2 border-black dark:bg-gray-800 p-4 mb-20"> 
@@ -92,6 +124,13 @@ const TeamItem: React.FC<TeamItemProps> = ({
               onChange={(e) => setNewWorldChampionships(e.target.value)} 
               placeholder="worldChampionships"
             />
+
+            <input
+              type="file"
+              onChange={(e) => setNewImage(e.target.files[0])}
+              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
+            />
+
 
             <button className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg" onClick={confirmEdit}>Save Changes</button>
             <button className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg" onClick={() => setIsEditing(false)}>Cancel</button>

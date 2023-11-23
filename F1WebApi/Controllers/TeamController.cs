@@ -124,8 +124,14 @@ public class TeamsController : ControllerBase
 
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Team>> Put(int id, [FromBody] Team updatedTeam)
+    public async Task<ActionResult<Team>> Put(int id, [FromForm(Name = "team")] string teamJson, [FromForm(Name = "image")] IFormFile? image)
     {
+        Team? updatedTeam = JsonSerializer.Deserialize<Team>(teamJson, new JsonSerializerOptions()
+        {
+            NumberHandling = JsonNumberHandling.AllowReadingFromString |
+            JsonNumberHandling.WriteAsString
+        });
+
         if (updatedTeam == null)
         {
             return BadRequest("Team data is null.");
@@ -133,24 +139,41 @@ public class TeamsController : ControllerBase
 
         try
         {
-            var team = await context.Teams.FindAsync(id);
-            if (team == null)
+            if (image != null)
+            {
+                string webRootPath = environment.WebRootPath;
+                string absolutePath = Path.Combine($"{webRootPath}/images/teams/{image.FileName}");
+
+                using (var stream = new FileStream(absolutePath, FileMode.Create))
+                {
+                    await image.CopyToAsync(stream);
+                }
+            }
+
+            var result = await context.Teams.FindAsync(id);
+            if (result == null)
             {
                 return NotFound($"Team with Id = {id} not found.");
             }
 
             // Updating properties
-            team.FullTeamName = updatedTeam.FullTeamName;
-            team.Base = updatedTeam.Base;
-            team.WorldChampionships = updatedTeam.WorldChampionships;
-            team.Image = updatedTeam.Image;
+            var local = this.context.Set<Team>()
+                .Local
+                .FirstOrDefault(entry => entry.Id.Equals(id));
 
-            // ... Update other properties as needed
+            // Check if local is not null
+            if (local != null)
+            {
+                // Detach
+                this.context.Entry(local).State = EntityState.Detached;
+            }
 
-            context.Teams.Update(team);
+            // Set modified flag in your entry
+            this.context.Entry(updatedTeam).State = EntityState.Modified;
+
             await context.SaveChangesAsync();
 
-            return Ok(team);
+            return Ok(updatedTeam);
         }
         catch (Exception ex)
         {

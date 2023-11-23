@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H19K5Y/h4KMYXBvPaBLDks7FSXb2iZik16qmpqmxEr4=",
+  "Hash": "WlnXMWLX/AjokIN6OODlDBZX6fz7mp2HPW6bwtnEl78=",
   "Source": "F1WebApi",
   "BasePath": "_content/F1WebApi",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/lewis-hamilton.png"
+    },
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lifePill.png",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "images/drivers/lifePill.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/drivers/lifePill.png"
     },
     {
       "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
