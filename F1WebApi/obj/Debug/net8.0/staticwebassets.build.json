@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+N3H01d7a+uEiMb/NNv9MAjzPcx8dH/xNYt9oSkowsM=",
+  "Hash": "TEean4oegx2ZXpUv1Xojyl2VO65WU7NLNEAZqreHUko=",
   "Source": "F1WebApi",
   "BasePath": "_content/F1WebApi",
   "Mode": "Default",
@@ -680,6 +680,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/races/lifePill.png"
+    },
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/massOfPeople.jpeg",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "images/races/massOfPeople.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/races/massOfPeople.jpeg"
     },
     {
       "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/mexico_circuit.png",

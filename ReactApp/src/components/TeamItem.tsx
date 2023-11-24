@@ -9,11 +9,10 @@ const TeamItem: React.FC<TeamItemProps> = ({
     const context = useContext(DataContext);
     const [isConfirmingDelete, setIsConfirmingDelete] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
-    const [newFullTeamName, setNewFullTeamName] = useState(team.fullTeamName);
-    const [newBase, setNewBase] = useState(team.base);
-    const [newWorldChampionships, setNewWorldChampionships] = useState(team.worldChampionships);
-    const [newImage, setNewImage] = useState(team.image);
-
+    const [newFullTeamName, setNewFullTeamName] = useState(team.fullTeamName ?? '');
+    const [newBase, setNewBase] = useState(team.base ?? '');
+    const [newWorldChampionships, setNewWorldChampionships] = useState(team.worldChampionships ?? '');
+    const [newImage, setNewImage] = useState(null);
 
     const handleDeleteClick = () => {
       setIsConfirmingDelete(true);
@@ -30,8 +29,12 @@ const TeamItem: React.FC<TeamItemProps> = ({
       }
     };
 
-    const handleEditClick = () => {
+    const handleEditClick = (team) => {
       setIsEditing(true);
+
+      setNewFullTeamName(team.fullTeamName);
+      setNewBase(team.base);
+      setNewWorldChampionships(team.worldChampionships);
     }
   
     const confirmEdit = async () => {
@@ -41,7 +44,7 @@ const TeamItem: React.FC<TeamItemProps> = ({
           fullTeamName: newFullTeamName,
           base: newBase,
           worldChampionships: newWorldChampionships,
-          image: (newImage !== null ? newImage.name : '')
+          image: (newImage !== null ? newImage.name : team.image)
         };
     
         const res = await context.updateTeam(updatedTeam, newImage);
@@ -56,7 +59,8 @@ const TeamItem: React.FC<TeamItemProps> = ({
         const updatedTeams = teams.map(t => t.id === updatedTeam.id ? updatedTeam : t);
 
         setTeamsData(updatedTeams);
-        
+        setIsEditing(false);
+
       } catch (error) {
         console.error(`Error editing team: ${error}`);
       }
@@ -70,7 +74,7 @@ const TeamItem: React.FC<TeamItemProps> = ({
           <img className="m-auto max-h-[15rem]" src={`${baseUrl}/images/teams/${team.image}`} alt="" />
 
           <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
-          <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
+          <button onClick={() => handleEditClick(team)} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
 
         {isConfirmingDelete && (
           <div className="confirmation-dialog text-black dark:text-gray-400 text-base">
@@ -105,7 +109,7 @@ const TeamItem: React.FC<TeamItemProps> = ({
             />
 
             <input
-              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
+              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base w-full"
               type="file"
               onChange={(e) => setNewImage(e.target.files[0])}
             />

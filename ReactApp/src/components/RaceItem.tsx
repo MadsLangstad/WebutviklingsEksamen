@@ -11,7 +11,7 @@ const RaceItem: React.FC<RaceItemProps> = ({
     const [newGrandPrix, setNewGrandPrix] = useState(race.grandPrix ?? '');
     const [newWinner, setNewWinner] = useState(race.winner ?? '');
     const [newLaps, setNewLaps] = useState(race.laps ?? '');
-    const [newImage, setNewImage] = useState(race.image);
+    const [newImage, setNewImage] = useState(null);
 
     const handleDeleteClick = () => {
       setIsConfirmingDelete(true);
@@ -28,8 +28,12 @@ const RaceItem: React.FC<RaceItemProps> = ({
       }
     };
 
-    const handleEditClick = () => {
+    const handleEditClick = (race: Race) => {
       setIsEditing(true);
+
+      setNewGrandPrix(race.grandPrix);
+      setNewWinner(race.winner);
+      setNewLaps(race.laps);
     };
   
     const confirmEdit = async () => {
@@ -39,7 +43,7 @@ const RaceItem: React.FC<RaceItemProps> = ({
           grandPrix: newGrandPrix,
           winner: newWinner,
           laps: newLaps,
-          image: (newImage !== null ? newImage.name : '')
+          image: (newImage !== null ? newImage.name : race.image)
         };
 
         const res = await context.updateRace(updatedRace, newImage);
@@ -54,6 +58,7 @@ const RaceItem: React.FC<RaceItemProps> = ({
         const updatedRaces = races.map(r => r.id === race.id ? updatedRace : r);
 
         setRacesData(updatedRaces);
+        setIsEditing(false);
 
       } catch (error) {
         console.error(`Error editing race: ${error}`);
@@ -67,7 +72,7 @@ const RaceItem: React.FC<RaceItemProps> = ({
           <p className="text-black dark:text-gray-400 text-base">Laps: {race.laps}</p>
           <img className="m-auto max-h-[15rem]" src={`${baseUrl}/images/races/${race.image}`} alt="" />
           <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
-          <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
+          <button onClick={() => handleEditClick(race)} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
 
         {isConfirmingDelete && (
           <div className="confirmation-dialog text-black dark:text-gray-400 text-base">
@@ -102,7 +107,7 @@ const RaceItem: React.FC<RaceItemProps> = ({
             />
 
             <input
-              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
+              className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base w-full"
               type="file"
               onChange={(e) => setNewImage(e.target.files[0])}
             />

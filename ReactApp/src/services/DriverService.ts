@@ -47,7 +47,10 @@ const DriverService = (() => {
     const formData = new FormData();
 
     formData.append('driver', JSON.stringify(driver));
-    formData.append('image', image);
+
+    if (image !== null) {
+      formData.append('image', image);
+    }
 
     const config = {
         headers: {

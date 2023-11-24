@@ -8,10 +8,10 @@ const DriverItem: React.FC<DriverItemProps> = ({
   const context = useContext(DataContext);
   const [isConfirmingDelete, setIsConfirmingDelete] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  const [newName, setNewName] = useState(driver.name);
-  const [newTeam, setNewTeam] = useState(driver.team);
-  const [newCountry, setNewCountry] = useState(driver.country);
-  const [newImage, setNewImage] = useState(driver.image);
+  const [newName, setNewName] = useState(driver.name ?? '');
+  const [newTeam, setNewTeam] = useState(driver.team ?? '');
+  const [newCountry, setNewCountry] = useState(driver.country ?? '');
+  const [newImage, setNewImage] = useState(null);
 
   const handleDeleteClick = () => {
     setIsConfirmingDelete(true);
@@ -28,8 +28,12 @@ const DriverItem: React.FC<DriverItemProps> = ({
     }
   };
 
-  const handleEditClick = () => {
+  const handleEditClick = (driver: Driver) => {
     setIsEditing(true);
+
+    setNewName(driver.name);
+    setNewTeam(driver.team);
+    setNewCountry(driver.country);
   }
 
   const confirmEdit = async () => {
@@ -39,9 +43,9 @@ const DriverItem: React.FC<DriverItemProps> = ({
         name: newName,
         team: newTeam,
         country: newCountry,
-        image: (newImage !== null ? newImage.name : '')
+        image: (newImage !== null ? newImage.name : driver.image)
       };
-  
+
       const res = await context.updateDriver(updatedDriver, newImage);
 
       if(res !== false) {
@@ -50,13 +54,12 @@ const DriverItem: React.FC<DriverItemProps> = ({
         setNewCountry('');
         setNewImage(null);
       }
-
-      await context.updateDriver(updatedDriver);
-      setIsEditing(false);
       
       const updatedDrivers = drivers.map(d => d.id === updatedDriver.id ? updatedDriver : d);
       
       setDriversData(updatedDrivers);
+      setIsEditing(false);
+
     } catch (error) {
       console.error(`Error editing driver: ${error}`);
     }
@@ -69,9 +72,9 @@ const DriverItem: React.FC<DriverItemProps> = ({
                 <p className="text-black dark:text-gray-400 text-base">Country: {driver.country}</p>
                 <img className="m-auto max-h-[15rem]" src={`${baseUrl}/images/drivers/${driver.image}`} alt="" />
                 <button onClick={handleDeleteClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg delete-button text-black dark:text-gray-400 text-base">Delete</button>
-                <button onClick={handleEditClick} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
+                <button onClick={() => handleEditClick(driver)} className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg edit-button text-black dark:text-gray-400 text-base">Edit</button>
 
-                {isConfirmingDelete && (
+      {isConfirmingDelete && (
         <div className="confirmation-dialog text-black dark:text-gray-400 text-base">
           <p className="text-black dark:text-gray-400 text-base">Are you sure you want to delete this driver?</p>
           <button className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg" onClick={confirmDelete}>Yes</button>
@@ -104,7 +107,7 @@ const DriverItem: React.FC<DriverItemProps> = ({
         />
 
         <input
-          className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base"
+          className="p-2 m-3 border-2 border-black dark:border-gray-400 rounded-lg text-base w-full"
           type="file"
           onChange={(e) => setNewImage(e.target.files[0])}
         />

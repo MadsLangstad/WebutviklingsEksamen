@@ -6,6 +6,7 @@ using WebutviklingsEksamen.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Web;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -50,6 +51,28 @@ public class RacesController : ControllerBase
             if (race != null)
             {
                 return Ok(race);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
+    [HttpGet("laps/{laps}")]
+    public async Task<ActionResult<Race>> GetLaps(int laps)
+    {
+        try
+        {
+            List<Race>? races = await context.Races.Where(x => x.Laps == laps).ToListAsync();
+
+            if (races != null)
+            {
+                return Ok(races);
             }
             else
             {

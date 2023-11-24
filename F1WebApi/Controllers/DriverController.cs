@@ -62,6 +62,28 @@ public class DriversController : ControllerBase
         }
     }
 
+    [HttpGet("image/{image}")]
+    public async Task<ActionResult<Driver>> GetImage(string image)
+    {
+        try
+        {
+            List<Driver>? drivers = await context.Drivers.Where(x => x.Image == image).ToListAsync();
+
+            if (drivers != null)
+            {
+                return Ok(drivers);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
     [HttpDelete("{id}")]
     public async Task<ActionResult<Driver>> Delete(int id)
     {

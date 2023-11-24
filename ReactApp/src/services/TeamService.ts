@@ -48,8 +48,11 @@ const TeamService = (() => {
     const formData = new FormData();
 
     formData.append('team', JSON.stringify(team));
-    formData.append('image', image);
 
+    if (image !== null) {
+      formData.append('image', image);
+    }
+    
     const config = {
       headers: {
         'content-type': 'multipart/form-data'

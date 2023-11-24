@@ -26,11 +26,11 @@ const RaceService = (() => {
     const formData = new FormData();
     
     formData.append('race', JSON.stringify(race));
-    formData.append('image', image);
-    
-    console.log(race);
-    console.log(image);
 
+    if (image !== null) {
+      formData.append('image', image);
+    }
+    
     const config = {
         headers: {
             'content-type': 'multipart/form-data'

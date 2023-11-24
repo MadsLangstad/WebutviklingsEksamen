@@ -141,6 +141,10 @@
       "PackagePath": "staticwebassets/images/races/lifePill.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/massOfPeople.jpeg",
+      "PackagePath": "staticwebassets/images/races/massOfPeople.jpeg"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/mexico_circuit.png",
       "PackagePath": "staticwebassets/images/races/mexico_circuit.png"
     },

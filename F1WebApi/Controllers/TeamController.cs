@@ -62,6 +62,28 @@ public class TeamsController : ControllerBase
         }
     }
 
+    [HttpGet("worldChampionships/{worldChampionships}")]
+    public async Task<ActionResult<Team>> GetWorldChampionships(String worldChampionships)
+    {
+        try
+        {
+            List<Team>? teams = await context.Teams.Where(x => x.WorldChampionships == worldChampionships).ToListAsync();
+
+            if (teams != null)
+            {
+                return Ok(teams);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
     [HttpDelete("{id}")]
     public async Task<ActionResult<Team>> Delete(int id)
     {
