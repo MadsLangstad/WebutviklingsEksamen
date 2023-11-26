@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {}
+    "/Users/madslangstad/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {}
   },
   "projects": {
-    "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {
+    "/Users/madslangstad/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
+        "projectUniqueName": "/Users/madslangstad/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
         "projectName": "F1WebApi",
-        "projectPath": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
+        "projectPath": "/Users/madslangstad/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
         "packagesPath": "/Users/madslangstad/.nuget/packages/",
-        "outputPath": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/obj/",
+        "outputPath": "/Users/madslangstad/WebutviklingsEksamen/F1WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/madslangstad/.nuget/NuGet/NuGet.Config"

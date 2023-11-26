@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NcK3IwudR914PLdCwJ/bZ75bQ5a4oYuswN5kuCjWUnNc+M2kSIE9sLMlZ6nFSQxv8MvGv7EvYrss7uY6HTdvzA==",
+  "dgSpecHash": "O+050wKlBj/P4TEJ3sO+bK3opxFOiy/C4tzZPoeTDq/r03mJKBUiO0MpDwHJayz4QaElxiqVaqGRU5zGDkxHaA==",
   "success": true,
-  "projectFilePath": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
+  "projectFilePath": "/Users/madslangstad/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/madslangstad/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/madslangstad/.nuget/packages/microsoft.aspnetcore.openapi/7.0.13/microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
