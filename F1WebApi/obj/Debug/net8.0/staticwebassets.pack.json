@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets/images/drivers/lando-norris.png"
     },
     {
+      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lena.jpg",
+      "PackagePath": "staticwebassets/images/drivers/lena.jpg"
+    },
+    {
       "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",
       "PackagePath": "staticwebassets/images/drivers/lewis-hamilton.png"
     },

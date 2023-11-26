@@ -2,8 +2,10 @@ import React, { FC, useContext, useState, useRef, useEffect } from 'react';
 import { DataContext } from '../../contexts/DataContext';
 
 interface ModalProps  {
-    open: boolean;
-    setOpen: (open: boolean) => void;
+  type: string;
+  open: boolean;
+  data: object | null;
+  setOpen: (open: boolean) => void;
 }
 
 const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
@@ -30,7 +32,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
   const [raceLaps, setRaceLaps] = useState(0);
   const [raceImage, setRaceImage] = useState<File | null>(null);
 
-  // status 
+  // status
   const [success, setSuccess] = useState(false);
 
 
@@ -82,14 +84,14 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
       };
 
       const res = await context.addTeam(team, teamImage);
-      
+
       if(res !== false) {
         setSuccess(res);
         setTeamName("");
         setTeamBase("");
         setTeamWorldChampionships(0);
         setTeamImage(null);
-        
+
         team.id = res.id;
 
         setTeamsData([...teams, team]);
@@ -98,7 +100,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
       console.error('AddTeam api call failed', error)
     }
   }
-  
+
 
   const handleRaceImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files ? event.target.files[0] : null;
@@ -115,7 +117,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
       };
 
       const res = await context.addRace(race, raceImage);
-      
+
       if(res !== false) {
         setSuccess(res);
         setRaceGrandPrix("");
@@ -132,14 +134,14 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
     }
   }
 
-  
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
         setOpen(false);
         setSuccess(false);
       }
-      
+
     };
 
     if (success) {
@@ -168,7 +170,7 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
     return (
       <div className="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto bg-gray-500 bg-opacity-75">
         <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
-          <h3 className="text-lg leading-6 font-medium text-gray-900">Add Driver</h3>          
+          <h3 className="text-lg leading-6 font-medium text-gray-900">Add Driver</h3>
           <div className="mt-2">
 
             <label className="block text-sm font-medium text-gray-700" htmlFor="driver-name">Driver Name</label>
@@ -176,15 +178,15 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
 
             <label className="block text-sm font-medium text-gray-700" htmlFor="driver-team">Driver Team</label>
             <input id="driver-team" type="text" value={driverTeam} onChange={event => {setDriverTeam(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
-            
+
             <label className="block text-sm font-medium text-gray-700" htmlFor="driver-country">Driver Country</label>
             <input id="driver-country" type="text" value={driverCountry} onChange={event => {setDriverCountry(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
-          
+
             <label className="block text-sm font-medium text-gray-700" htmlFor="driver-image">Driver Image</label>
             <input id="driver-image" type="file" onChange={handleDriverImageChange} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
 
           </div>
-          
+
           <div className="mt-4">
             <button onClick={() => addDriver()} className="inline-flex justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
               Add
@@ -202,19 +204,19 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
         <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
           <h3 className="text-lg leading-6 font-medium text-gray-900">Add Team</h3>
           <div className="mt-2">
-            
+
             <label className="block text-sm font-medium text-gray-700" htmlFor="driver-name">Team Name</label>
             <input id="team-name" type="text" value={teamName} onChange={event => {setTeamName(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
 
             <label className="block text-sm font-medium text-gray-700" htmlFor="team-name">Team Base</label>
             <input id="team-base" type="text" value={teamBase} onChange={event => {setTeamBase(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
-            
+
             <label className="block text-sm font-medium text-gray-700" htmlFor="team-world-championships">Team world-championships</label>
             <input id="team-world-championships" type="number" value={teamWorldChampionships} onChange={event => {setTeamWorldChampionships(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
 
             <label className="block text-sm font-medium text-gray-700" htmlFor="team-image">Team Image</label>
             <input id="team-image" type="file" onChange={handleTeamImageChange} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
-          
+
 
           </div>
           <div className="mt-4">
@@ -234,20 +236,20 @@ const Modal: FC<ModalProps> = ({type, open, setOpen}) => {
         <div ref={modalRef} className="relative transform overflow-hidden rounded-lg bg-white p-6 shadow-xl">
           <h3 className="text-lg leading-6 font-medium text-gray-900">Add Race</h3>
           <div className="mt-2">
-            
+
             <label className="block text-sm font-medium text-gray-700" htmlFor="race-grand-prix">Grand Prix</label>
             <input id="race-grand-prix" type="text" value={raceGrandPrix} onChange={event => {setRaceGrandPrix(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
-            
+
             <label className="block text-sm font-medium text-gray-700" htmlFor="race-winner">Winner</label>
             <input id="race-winner" type="text" value={raceWinner} onChange={event => {setRaceWinner(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
-          
+
             <label className="block text-sm font-medium text-gray-700" htmlFor="race-laps">Number Of Laps</label>
             <input id="race-laps" type="number" value={raceLaps} onChange={event => {setRaceLaps(event.target.value);}} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
 
             <label className="block text-sm font-medium text-gray-700" htmlFor="race-image">Race Image</label>
             <input id="race-image" type="file" onChange={handleRaceImageChange} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" />
           </div>
-          
+
           <div className="mt-4">
             <button onClick={() => addRace()} className="inline-flex justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
               Add

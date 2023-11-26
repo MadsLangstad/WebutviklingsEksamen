@@ -1,9 +1,12 @@
 import React from 'react';
 import Quiz from '../components/game/Quiz';
 
-interface Props {}
+interface IProps {
+    isLightMode: boolean,
+    setLightDarkMode: (type: string) => void
+}
 
-const Game: React.FC<Props> = (props) => {
+const Game: React.FC<IProps> = (props: IProps) => {
     return (
         <>
             <div className="flex flex-row justify-end mt-10 mr-10">

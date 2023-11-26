@@ -4,8 +4,13 @@ import TeamList from '../components/TeamList';
 import RaceList from '../components/RaceList';
 import Modal from '../components/shared/Modal';
 
-const Home: React.FC = (props) => {
-  
+interface IProps {
+  isLightMode: boolean,
+  setLightDarkMode: (type: string) => void
+}
+
+const Home: React.FC<IProps> = (props: IProps) => {
+
   const [isDriveModalOpen, setIsDriveModalOpen] = useState(false);
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
   const [isRaceModalOpen, setIsRaceModalOpen] = useState(false);
@@ -36,7 +41,7 @@ const Home: React.FC = (props) => {
           </svg>
         </div>
       </div>
-      
+
       <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 justify-center place-items-center">
         <DriverList />
       </div>

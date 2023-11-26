@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TEean4oegx2ZXpUv1Xojyl2VO65WU7NLNEAZqreHUko=",
+  "Hash": "7NGCijplztvcZzhCAfPDhegAtdqLpcCosLUiyTYIgtU=",
   "Source": "F1WebApi",
   "BasePath": "_content/F1WebApi",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/lando-norris.png"
+    },
+    {
+      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lena.jpg",
+      "SourceId": "F1WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "BasePath": "_content/F1WebApi",
+      "RelativePath": "images/drivers/lena.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/drivers/lena.jpg"
     },
     {
       "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",

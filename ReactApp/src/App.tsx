@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DataProvider } from './contexts/DataContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home, Game } from './pages'
@@ -8,9 +8,9 @@ function App() {
 
   const [isLightMode, setIsLightMode] = useState(true);
 
-  const lightMode = localStorage.getItem('lightMode', 'white');
+  let lightMode = localStorage.getItem('lightMode');
 
-  const setLightDarkMode = (type) => { 
+  const setLightDarkMode = (type: string) => {
     if (type === 'dark') {
       if (isLightMode === false) {
         return;
@@ -20,7 +20,7 @@ function App() {
       document.documentElement.classList.add('dark');
       document.body.classList.remove('bg-white');
       document.body.classList.add('bg-gray-600');
-  
+
     } else if (type === 'light') {
       if (isLightMode === true) {
         return;
@@ -32,9 +32,13 @@ function App() {
       document.body.classList.add('bg-white');
     }
 
-    setIsLightMode(!isLightMode);
-
     localStorage.setItem('lightMode', type);
+
+    setIsLightMode(!isLightMode);
+  }
+
+  if (lightMode === null) {
+    lightMode = 'light';
   }
 
   setLightDarkMode(lightMode);
@@ -45,8 +49,8 @@ function App() {
             <Header />
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home isLightMode={ isLightMode } setIsLightMode={ setIsLightMode } setLightDarkMode={ setLightDarkMode } />}>Api</Route>
-                    <Route path="/game" element={<Game isLightMode={ isLightMode } setIsLightMode={ setIsLightMode } setLightDarkMode={ setLightDarkMode } />}>Game</Route>
+                    <Route path="/" element={<Home isLightMode={ isLightMode } setLightDarkMode={ setLightDarkMode } />}>Api</Route>
+                    <Route path="/game" element={<Game isLightMode={ isLightMode } setLightDarkMode={ setLightDarkMode } />}>Game</Route>
                 </Routes>
             </BrowserRouter>
         </DataProvider>
