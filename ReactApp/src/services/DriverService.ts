@@ -1,6 +1,8 @@
+// src/services/DriverService.ts
+
 import axios, { AxiosResponse } from 'axios';
 
-type Driver = {
+export interface Driver {
   id: number; 
   name: string | null;
   team: string | null;
@@ -9,11 +11,10 @@ type Driver = {
 }
 
 const DriverService = (() => {
-
   const apiPath = '/drivers';
-  let controller;
+  let controller: string = '';
 
-  const initialize = (baseApiUrl) => {
+  const initialize = (baseApiUrl: string) => {
     controller = baseApiUrl + apiPath;
   };
 
@@ -22,44 +23,43 @@ const DriverService = (() => {
     return result.data;
   };
 
-  const addDriver = async (driver: Driver, image: HTMLInputElement): Promise<Driver> => {
+  const addDriver = async (driver: Driver, image: File | null): Promise<Driver> => {
     const formData = new FormData();
-
     formData.append('driver', JSON.stringify(driver));
-    formData.append('image', image);
-
-    const config = {
-        headers: {
-            'content-type': 'multipart/form-data'
-        }
-    }
-
-    const result: AxiosResponse<Driver> = await axios.post(controller, formData, config);
-    return result;
-  }
-
-  const deleteDriver = async (id: number): Promise<void> => {
-    const result = await axios.delete(`${controller}/${id}`);
-    return result;
-  };
-
-  const updateDriver = async (driver: Driver, image: HTMLInputElement): Promise<Driver> => {
-    const formData = new FormData();
-
-    formData.append('driver', JSON.stringify(driver));
-
-    if (image !== null) {
+    if (image) {
       formData.append('image', image);
     }
 
     const config = {
-        headers: {
-            'content-type': 'multipart/form-data'
-        }
+      headers: {
+        'content-type': 'multipart/form-data',
+      },
+    };
+
+    const result: AxiosResponse<Driver> = await axios.post(controller, formData, config);
+    return result.data;
+  };
+
+  const deleteDriver = async (id: number): Promise<boolean> => {
+    await axios.delete(`${controller}/${id}`);
+    return true;
+  };
+
+  const updateDriver = async (driver: Driver, image: File | null): Promise<boolean> => {
+    const formData = new FormData();
+    formData.append('driver', JSON.stringify(driver));
+    if (image) {
+      formData.append('image', image);
     }
 
-    const result: AxiosResponse<Driver> = await axios.put(`${controller}/${driver.id}`, formData, config);
-    return result;
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data',
+      },
+    };
+
+    await axios.put(`${controller}/${driver.id}`, formData, config);
+    return true;
   };
 
   return {
@@ -67,7 +67,7 @@ const DriverService = (() => {
     getAllDrivers,
     addDriver,
     deleteDriver,
-    updateDriver
+    updateDriver,
   };
 })();
 

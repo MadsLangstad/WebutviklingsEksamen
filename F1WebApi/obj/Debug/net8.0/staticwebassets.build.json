@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7NGCijplztvcZzhCAfPDhegAtdqLpcCosLUiyTYIgtU=",
+  "Hash": "A0G8rsCyrIcNNLoQ5OH1g9IYMdnq4ir0gFAtvUTtj3o=",
   "Source": "F1WebApi",
   "BasePath": "_content/F1WebApi",
   "Mode": "Default",
@@ -10,1284 +10,2382 @@
     {
       "Name": "F1WebApi/wwwroot",
       "Source": "F1WebApi",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/css/style.css",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/css/style.css",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "css/style.css",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "an7paxvh55",
+      "Integrity": "Cm/QGmCy8QeDj8ajBErcQmoIBY/jxnhr+CauOHLj96c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/style.css"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/alexander-albon.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/alexander-albon.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/alexander-albon.png",
+      "RelativePath": "images/drivers/alexander-albon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "71mrlfqwgs",
+      "Integrity": "teaSwA3SNYzm0qizxKT1+j6xQ2LFs34JcZg5xS0Hlik=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/alexander-albon.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/car.jpg",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/carlos-sainz.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/car.jpg",
+      "RelativePath": "images/drivers/carlos-sainz#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/drivers/car.jpg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/carlos-sainz.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/carlos-sainz.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
+      "Fingerprint": "ln8pgecx12",
+      "Integrity": "EQC1O7pSw01bi05/3tN0X9AiwvySn0VP8rpH8gJLrEU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/carlos-sainz.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/charles-leclerc.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/charles-leclerc.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/charles-leclerc.png",
+      "RelativePath": "images/drivers/charles-leclerc#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "evf7tw53ar",
+      "Integrity": "Ghm9/2kVcBUiiFXPpGkPEGFbSwzAeKitECKcclXjw1Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/charles-leclerc.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/daniel-ricciardo.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/daniel-ricciardo.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/daniel-ricciardo.png",
+      "RelativePath": "images/drivers/daniel-ricciardo#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ww5jyp0jw7",
+      "Integrity": "sMqZBS3hgPwZ5i54DLXiPevZ65UfL6+OWLXy+IIoCio=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/daniel-ricciardo.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/esteban-ocon.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/esteban-ocon.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/esteban-ocon.png",
+      "RelativePath": "images/drivers/esteban-ocon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "w7e7nq5qrj",
+      "Integrity": "vDLcJjPXj34nTwmS0LM3SVRnyM00Wl+1z46Vb2JbnPI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/esteban-ocon.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/fernando-alonso.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/fernando-alonso.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/fernando-alonso.png",
+      "RelativePath": "images/drivers/fernando-alonso#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "0sm28itykj",
+      "Integrity": "MEB4PUIaLvDUG2sT8+QK+nh81zHh0Mf4eCinIOYWVyg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/fernando-alonso.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/george-russel.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/george-russel.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/george-russel.png",
+      "RelativePath": "images/drivers/george-russel#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "1jq7qsebu4",
+      "Integrity": "85O4mfUZTtHwVRornjO7SNwf6OG00FavNoOmSs+yyJk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/george-russel.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/kevin-magnussen.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/kevin-magnussen.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/kevin-magnussen.png",
+      "RelativePath": "images/drivers/kevin-magnussen#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "3o257c4ho5",
+      "Integrity": "PcwO3a6m7rLLYPz6iFsfuDq5/iJgnTxJt2gG3xOtI58=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/kevin-magnussen.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lance-stroll.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lance-stroll.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/lance-stroll.png",
+      "RelativePath": "images/drivers/lance-stroll#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "uvf2pdg5or",
+      "Integrity": "FvZWv9ukVJXfdbVlQeE8zhMbe8eWJgSggNqh+IXxm+E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/lance-stroll.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lando-norris.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lando-norris.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/lando-norris.png",
+      "RelativePath": "images/drivers/lando-norris#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "h3y5qleimx",
+      "Integrity": "I5aUaklw/mjHQYgETndwXuLM4eLa/wbq7rluswQsPyQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/lando-norris.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lena.jpg",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/lena.jpg",
+      "RelativePath": "images/drivers/lewis-hamilton#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/drivers/lena.jpg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/lewis-hamilton.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
+      "Fingerprint": "c48bpujd17",
+      "Integrity": "3F5sVxcKJIUVwtCaR25F9kzWXwoi9xXnm5ZTzsHj+E8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/lewis-hamilton.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lifePill.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/lifePill.png",
+      "RelativePath": "images/drivers/logan-sargeant#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/drivers/lifePill.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/logan-sargeant.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
+      "Fingerprint": "xu4rz6kqq1",
+      "Integrity": "Wexxn7dJii9+nKZCN64UydFwViLcWiX6uLk+L4YGPV8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/logan-sargeant.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/massOfPeople.jpeg",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/max-verstappen.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/massOfPeople.jpeg",
+      "RelativePath": "images/drivers/max-verstappen#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/drivers/massOfPeople.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/max-verstappen.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/max-verstappen.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
+      "Fingerprint": "4v8kzpre0p",
+      "Integrity": "4KDrPfBg7ztbA3k0q4u1YgoGd/IRxs6j/IltV0pUcHQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/max-verstappen.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/nico-hulkenberg.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/nico-hulkenberg.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/nico-hulkenberg.png",
+      "RelativePath": "images/drivers/nico-hulkenberg#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "n1z76r15cc",
+      "Integrity": "Kw8BUs12geg7N+bSj9faIK/xfe3X3V/MMrZbDo0O04Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/nico-hulkenberg.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/oscar-piastri.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/oscar-piastri.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/oscar-piastri.png",
+      "RelativePath": "images/drivers/oscar-piastri#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "u6xnokyunq",
+      "Integrity": "xo/nBmLTty8LEOKVLhjey2wR9c34keqU9ilGM9lgNn4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/oscar-piastri.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/pierre-gasly.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/pierre-gasly.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/pierre-gasly.png",
+      "RelativePath": "images/drivers/pierre-gasly#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "stowxb807w",
+      "Integrity": "sJJZp2/wVEYr8Pnj/alOi1vaciXTAaHE2GU4P0i+Hc8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/pierre-gasly.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/sergio-perez.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/sergio-perez.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/sergio-perez.png",
+      "RelativePath": "images/drivers/sergio-perez#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "1yeow6kemj",
+      "Integrity": "V+aTqUUOGjflfsVgTBbKhZ5+n5YtviAtVy7VrHabCjQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/sergio-perez.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/valtteri-bottas.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/valtteri-bottas.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/valtteri-bottas.png",
+      "RelativePath": "images/drivers/valtteri-bottas#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "w1fs12dctr",
+      "Integrity": "NPQKwZbJq7orXwItX189chPW94ODDYHWksm/maJ+SZ0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/valtteri-bottas.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/yuki-tsunoda.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/yuki-tsunoda.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/yuki-tsunoda.png",
+      "RelativePath": "images/drivers/yuki-tsunoda#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "yieqneki4f",
+      "Integrity": "CvtSjwTwneFKz+ADR7+4QAfZCHj6dAbGNvnxi/pZ5bc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/yuki-tsunoda.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/zhou-guanyu.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/zhou-guanyu.png",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/drivers/zhou-guanyu.png",
+      "RelativePath": "images/drivers/zhou-guanyu#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5pp2rxv0ra",
+      "Integrity": "ZwJlOcSB5OHRR0ckTAcHtwPEJt5CVfsBZj8veGffnIE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/drivers/zhou-guanyu.png"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/australia_circuit.png",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/australia_circuit.png",
+      "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/australia_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/austria_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/austria_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/austria_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/azerbaijan.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/azerbaijan.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/azerbaijan.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/bahrain_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/bahrain_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/bahrain_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/Belgium_Circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/Belgium_Circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/Belgium_Circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/brazil_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/brazil_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/brazil_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/great_britain_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/great_britain_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/great_britain_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/hungary_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/hungary_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/hungary_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/italy_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/italy_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/italy_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/japan_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/japan_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/japan_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/lifePill.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/lifePill.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/lifePill.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/massOfPeople.jpeg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/massOfPeople.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/massOfPeople.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/mexico_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/mexico_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/mexico_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/miami.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/miami.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/miami.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/monaco.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/monaco.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/monaco.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/montreal.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/montreal.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/montreal.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/netherlands_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/netherlands_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/netherlands_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/qatar.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/qatar.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/qatar.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/saudi.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/saudi.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/saudi.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/singapore_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/singapore_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/singapore_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spaceK.jpeg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/spaceK.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/spaceK.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spain_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/spain_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/spain_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/tennis.jpeg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/tennis.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/tennis.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/usa_circuit.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/races/usa_circuit.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/races/usa_circuit.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/alfa-romeo-team-stake.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/alfa-romeo-team-stake.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/alfa-romeo-team-stake.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/alpine.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/alpine.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/alpine.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/amg-petronas.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/amg-petronas.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/amg-petronas.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/aston-martin.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/aston-martin.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/aston-martin.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/car.jpg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/car.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/car.jpg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/massOfPeople.jpeg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/massOfPeople.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/massOfPeople.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/mclaren.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/mclaren.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/mclaren.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/moneygram.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/moneygram.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/moneygram.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/red-bull.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/red-bull.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/red-bull.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/scuderia-alphatauri.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/scuderia-alphatauri.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/scuderia-alphatauri.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/scuderia-ferrari.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/scuderia-ferrari.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/scuderia-ferrari.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space.webp",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/space.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/space.webp"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space2.jpeg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/space2.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/space2.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/spaceK.jpeg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/spaceK.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/spaceK.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/tennis.jpeg",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/tennis.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/tennis.jpeg"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/williams-racing.png",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "images/teams/williams-racing.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teams/williams-racing.png"
-    },
-    {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
-      "SourceId": "F1WebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
-      "BasePath": "_content/F1WebApi",
-      "RelativePath": "index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
+      "Fingerprint": "k4g57wxo1v",
+      "Integrity": "5NcP+e1tKLlHkxrdGWc/mHvVWDm61BM9IHQbBMbvQs8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
     },
     {
-      "Identity": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/scripts/index.js",
+      "Identity": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/scripts/index.js",
       "SourceId": "F1WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/",
+      "ContentRoot": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/",
       "BasePath": "_content/F1WebApi",
-      "RelativePath": "scripts/index.js",
+      "RelativePath": "scripts/index#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "edwutbzl3u",
+      "Integrity": "YrgXekquLq5S2aR+sH1sz9O4JE7HNN409LKqUnbtJqw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/scripts/index.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/style.an7paxvh55.css",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/css/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cm/QGmCy8QeDj8ajBErcQmoIBY/jxnhr+CauOHLj96c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jan 2024 12:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "an7paxvh55"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cm/QGmCy8QeDj8ajBErcQmoIBY/jxnhr+CauOHLj96c="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/css/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cm/QGmCy8QeDj8ajBErcQmoIBY/jxnhr+CauOHLj96c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jan 2024 12:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cm/QGmCy8QeDj8ajBErcQmoIBY/jxnhr+CauOHLj96c="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/alexander-albon.71mrlfqwgs.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/alexander-albon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"teaSwA3SNYzm0qizxKT1+j6xQ2LFs34JcZg5xS0Hlik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "71mrlfqwgs"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/alexander-albon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-teaSwA3SNYzm0qizxKT1+j6xQ2LFs34JcZg5xS0Hlik="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/alexander-albon.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/alexander-albon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"teaSwA3SNYzm0qizxKT1+j6xQ2LFs34JcZg5xS0Hlik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-teaSwA3SNYzm0qizxKT1+j6xQ2LFs34JcZg5xS0Hlik="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/carlos-sainz.ln8pgecx12.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/carlos-sainz.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136077"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EQC1O7pSw01bi05/3tN0X9AiwvySn0VP8rpH8gJLrEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ln8pgecx12"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/carlos-sainz.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EQC1O7pSw01bi05/3tN0X9AiwvySn0VP8rpH8gJLrEU="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/carlos-sainz.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/carlos-sainz.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136077"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EQC1O7pSw01bi05/3tN0X9AiwvySn0VP8rpH8gJLrEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EQC1O7pSw01bi05/3tN0X9AiwvySn0VP8rpH8gJLrEU="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/charles-leclerc.evf7tw53ar.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/charles-leclerc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ghm9/2kVcBUiiFXPpGkPEGFbSwzAeKitECKcclXjw1Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "evf7tw53ar"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/charles-leclerc.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ghm9/2kVcBUiiFXPpGkPEGFbSwzAeKitECKcclXjw1Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/charles-leclerc.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/charles-leclerc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ghm9/2kVcBUiiFXPpGkPEGFbSwzAeKitECKcclXjw1Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ghm9/2kVcBUiiFXPpGkPEGFbSwzAeKitECKcclXjw1Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/daniel-ricciardo.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/daniel-ricciardo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sMqZBS3hgPwZ5i54DLXiPevZ65UfL6+OWLXy+IIoCio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sMqZBS3hgPwZ5i54DLXiPevZ65UfL6+OWLXy+IIoCio="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/daniel-ricciardo.ww5jyp0jw7.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/daniel-ricciardo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sMqZBS3hgPwZ5i54DLXiPevZ65UfL6+OWLXy+IIoCio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ww5jyp0jw7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/daniel-ricciardo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sMqZBS3hgPwZ5i54DLXiPevZ65UfL6+OWLXy+IIoCio="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/esteban-ocon.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/esteban-ocon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111841"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vDLcJjPXj34nTwmS0LM3SVRnyM00Wl+1z46Vb2JbnPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vDLcJjPXj34nTwmS0LM3SVRnyM00Wl+1z46Vb2JbnPI="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/esteban-ocon.w7e7nq5qrj.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/esteban-ocon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111841"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vDLcJjPXj34nTwmS0LM3SVRnyM00Wl+1z46Vb2JbnPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w7e7nq5qrj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/esteban-ocon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vDLcJjPXj34nTwmS0LM3SVRnyM00Wl+1z46Vb2JbnPI="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/fernando-alonso.0sm28itykj.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/fernando-alonso.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MEB4PUIaLvDUG2sT8+QK+nh81zHh0Mf4eCinIOYWVyg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0sm28itykj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/fernando-alonso.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MEB4PUIaLvDUG2sT8+QK+nh81zHh0Mf4eCinIOYWVyg="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/fernando-alonso.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/fernando-alonso.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MEB4PUIaLvDUG2sT8+QK+nh81zHh0Mf4eCinIOYWVyg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MEB4PUIaLvDUG2sT8+QK+nh81zHh0Mf4eCinIOYWVyg="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/george-russel.1jq7qsebu4.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/george-russel.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"85O4mfUZTtHwVRornjO7SNwf6OG00FavNoOmSs+yyJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1jq7qsebu4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/george-russel.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-85O4mfUZTtHwVRornjO7SNwf6OG00FavNoOmSs+yyJk="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/george-russel.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/george-russel.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"85O4mfUZTtHwVRornjO7SNwf6OG00FavNoOmSs+yyJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-85O4mfUZTtHwVRornjO7SNwf6OG00FavNoOmSs+yyJk="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/kevin-magnussen.3o257c4ho5.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/kevin-magnussen.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PcwO3a6m7rLLYPz6iFsfuDq5/iJgnTxJt2gG3xOtI58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3o257c4ho5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/kevin-magnussen.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PcwO3a6m7rLLYPz6iFsfuDq5/iJgnTxJt2gG3xOtI58="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/kevin-magnussen.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/kevin-magnussen.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PcwO3a6m7rLLYPz6iFsfuDq5/iJgnTxJt2gG3xOtI58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PcwO3a6m7rLLYPz6iFsfuDq5/iJgnTxJt2gG3xOtI58="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/lance-stroll.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lance-stroll.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "135645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FvZWv9ukVJXfdbVlQeE8zhMbe8eWJgSggNqh+IXxm+E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FvZWv9ukVJXfdbVlQeE8zhMbe8eWJgSggNqh+IXxm+E="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/lance-stroll.uvf2pdg5or.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lance-stroll.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "135645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FvZWv9ukVJXfdbVlQeE8zhMbe8eWJgSggNqh+IXxm+E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uvf2pdg5or"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/lance-stroll.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FvZWv9ukVJXfdbVlQeE8zhMbe8eWJgSggNqh+IXxm+E="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/lando-norris.h3y5qleimx.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lando-norris.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I5aUaklw/mjHQYgETndwXuLM4eLa/wbq7rluswQsPyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h3y5qleimx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/lando-norris.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I5aUaklw/mjHQYgETndwXuLM4eLa/wbq7rluswQsPyQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/lando-norris.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lando-norris.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I5aUaklw/mjHQYgETndwXuLM4eLa/wbq7rluswQsPyQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I5aUaklw/mjHQYgETndwXuLM4eLa/wbq7rluswQsPyQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/lewis-hamilton.c48bpujd17.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131399"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3F5sVxcKJIUVwtCaR25F9kzWXwoi9xXnm5ZTzsHj+E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c48bpujd17"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/lewis-hamilton.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3F5sVxcKJIUVwtCaR25F9kzWXwoi9xXnm5ZTzsHj+E8="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/lewis-hamilton.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131399"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3F5sVxcKJIUVwtCaR25F9kzWXwoi9xXnm5ZTzsHj+E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3F5sVxcKJIUVwtCaR25F9kzWXwoi9xXnm5ZTzsHj+E8="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/logan-sargeant.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wexxn7dJii9+nKZCN64UydFwViLcWiX6uLk+L4YGPV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wexxn7dJii9+nKZCN64UydFwViLcWiX6uLk+L4YGPV8="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/logan-sargeant.xu4rz6kqq1.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wexxn7dJii9+nKZCN64UydFwViLcWiX6uLk+L4YGPV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xu4rz6kqq1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/logan-sargeant.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wexxn7dJii9+nKZCN64UydFwViLcWiX6uLk+L4YGPV8="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/max-verstappen.4v8kzpre0p.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/max-verstappen.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "154302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4KDrPfBg7ztbA3k0q4u1YgoGd/IRxs6j/IltV0pUcHQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4v8kzpre0p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/max-verstappen.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KDrPfBg7ztbA3k0q4u1YgoGd/IRxs6j/IltV0pUcHQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/max-verstappen.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/max-verstappen.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "154302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4KDrPfBg7ztbA3k0q4u1YgoGd/IRxs6j/IltV0pUcHQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4KDrPfBg7ztbA3k0q4u1YgoGd/IRxs6j/IltV0pUcHQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/nico-hulkenberg.n1z76r15cc.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/nico-hulkenberg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kw8BUs12geg7N+bSj9faIK/xfe3X3V/MMrZbDo0O04Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n1z76r15cc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/nico-hulkenberg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kw8BUs12geg7N+bSj9faIK/xfe3X3V/MMrZbDo0O04Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/nico-hulkenberg.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/nico-hulkenberg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kw8BUs12geg7N+bSj9faIK/xfe3X3V/MMrZbDo0O04Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kw8BUs12geg7N+bSj9faIK/xfe3X3V/MMrZbDo0O04Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/oscar-piastri.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/oscar-piastri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xo/nBmLTty8LEOKVLhjey2wR9c34keqU9ilGM9lgNn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xo/nBmLTty8LEOKVLhjey2wR9c34keqU9ilGM9lgNn4="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/oscar-piastri.u6xnokyunq.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/oscar-piastri.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xo/nBmLTty8LEOKVLhjey2wR9c34keqU9ilGM9lgNn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u6xnokyunq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/oscar-piastri.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xo/nBmLTty8LEOKVLhjey2wR9c34keqU9ilGM9lgNn4="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/pierre-gasly.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/pierre-gasly.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sJJZp2/wVEYr8Pnj/alOi1vaciXTAaHE2GU4P0i+Hc8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sJJZp2/wVEYr8Pnj/alOi1vaciXTAaHE2GU4P0i+Hc8="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/pierre-gasly.stowxb807w.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/pierre-gasly.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sJJZp2/wVEYr8Pnj/alOi1vaciXTAaHE2GU4P0i+Hc8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "stowxb807w"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/pierre-gasly.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sJJZp2/wVEYr8Pnj/alOi1vaciXTAaHE2GU4P0i+Hc8="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/sergio-perez.1yeow6kemj.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/sergio-perez.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+aTqUUOGjflfsVgTBbKhZ5+n5YtviAtVy7VrHabCjQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1yeow6kemj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/sergio-perez.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+aTqUUOGjflfsVgTBbKhZ5+n5YtviAtVy7VrHabCjQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/sergio-perez.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/sergio-perez.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+aTqUUOGjflfsVgTBbKhZ5+n5YtviAtVy7VrHabCjQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+aTqUUOGjflfsVgTBbKhZ5+n5YtviAtVy7VrHabCjQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/valtteri-bottas.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/valtteri-bottas.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NPQKwZbJq7orXwItX189chPW94ODDYHWksm/maJ+SZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NPQKwZbJq7orXwItX189chPW94ODDYHWksm/maJ+SZ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/valtteri-bottas.w1fs12dctr.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/valtteri-bottas.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NPQKwZbJq7orXwItX189chPW94ODDYHWksm/maJ+SZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w1fs12dctr"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/valtteri-bottas.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NPQKwZbJq7orXwItX189chPW94ODDYHWksm/maJ+SZ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/yuki-tsunoda.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/yuki-tsunoda.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129955"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CvtSjwTwneFKz+ADR7+4QAfZCHj6dAbGNvnxi/pZ5bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CvtSjwTwneFKz+ADR7+4QAfZCHj6dAbGNvnxi/pZ5bc="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/yuki-tsunoda.yieqneki4f.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/yuki-tsunoda.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129955"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CvtSjwTwneFKz+ADR7+4QAfZCHj6dAbGNvnxi/pZ5bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yieqneki4f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/yuki-tsunoda.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CvtSjwTwneFKz+ADR7+4QAfZCHj6dAbGNvnxi/pZ5bc="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/zhou-guanyu.5pp2rxv0ra.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/zhou-guanyu.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116671"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZwJlOcSB5OHRR0ckTAcHtwPEJt5CVfsBZj8veGffnIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5pp2rxv0ra"
+        },
+        {
+          "Name": "label",
+          "Value": "images/drivers/zhou-guanyu.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZwJlOcSB5OHRR0ckTAcHtwPEJt5CVfsBZj8veGffnIE="
+        }
+      ]
+    },
+    {
+      "Route": "images/drivers/zhou-guanyu.png",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/zhou-guanyu.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116671"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZwJlOcSB5OHRR0ckTAcHtwPEJt5CVfsBZj8veGffnIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Nov 2023 21:37:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZwJlOcSB5OHRR0ckTAcHtwPEJt5CVfsBZj8veGffnIE="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5NcP+e1tKLlHkxrdGWc/mHvVWDm61BM9IHQbBMbvQs8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jan 2024 12:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5NcP+e1tKLlHkxrdGWc/mHvVWDm61BM9IHQbBMbvQs8="
+        }
+      ]
+    },
+    {
+      "Route": "index.k4g57wxo1v.html",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5NcP+e1tKLlHkxrdGWc/mHvVWDm61BM9IHQbBMbvQs8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jan 2024 12:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k4g57wxo1v"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5NcP+e1tKLlHkxrdGWc/mHvVWDm61BM9IHQbBMbvQs8="
+        }
+      ]
+    },
+    {
+      "Route": "scripts/index.edwutbzl3u.js",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/scripts/index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YrgXekquLq5S2aR+sH1sz9O4JE7HNN409LKqUnbtJqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jan 2024 12:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "edwutbzl3u"
+        },
+        {
+          "Name": "label",
+          "Value": "scripts/index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YrgXekquLq5S2aR+sH1sz9O4JE7HNN409LKqUnbtJqw="
+        }
+      ]
+    },
+    {
+      "Route": "scripts/index.js",
+      "AssetFile": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/scripts/index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YrgXekquLq5S2aR+sH1sz9O4JE7HNN409LKqUnbtJqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Jan 2024 12:39:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YrgXekquLq5S2aR+sH1sz9O4JE7HNN409LKqUnbtJqw="
+        }
+      ]
     }
   ]
 }

@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {}
+    "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {}
   },
   "projects": {
-    "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {
+    "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
+        "projectUniqueName": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
         "projectName": "F1WebApi",
-        "projectPath": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
+        "projectPath": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/F1WebApi.csproj",
         "packagesPath": "/Users/madslangstad/.nuget/packages/",
-        "outputPath": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/obj/",
+        "outputPath": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/madslangstad/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -32,11 +32,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -76,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

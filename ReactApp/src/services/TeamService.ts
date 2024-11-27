@@ -1,19 +1,20 @@
+// src/services/TeamService.ts
+
 import axios, { AxiosResponse } from 'axios';
 
-type Team = {
+export interface Team {
   id: number;
   fullTeamName: string | null;
   base: string | null;
-  worldChampionships: string | null;
+  worldChampionships: number | null;
   image: string | null;
 }
 
 const TeamService = (() => {
-
   const apiPath = '/teams';
-  let controller;
+  let controller: string = '';
 
-  const initialize = (baseApiUrl) => {
+  const initialize = (baseApiUrl: string) => {
     controller = baseApiUrl + apiPath;
   };
 
@@ -21,49 +22,44 @@ const TeamService = (() => {
     const result: AxiosResponse<Team[]> = await axios.get(controller);
     return result.data;
   };
-      
-  const addTeam = async (team: Team, image: HTMLInputElement): Promise<Team> => {
+
+  const addTeam = async (team: Team, image: File | null): Promise<Team> => {
     const formData = new FormData();
-    
     formData.append('team', JSON.stringify(team));
-    formData.append('image', image);
-
-    const config = {
-      headers: {
-        'content-type': 'multipart/form-data'
-      }
-    }
-    
-    const result: AxiosResponse<Team> = await axios.post(controller, formData, config);
-    return result;
-  };
-
-  const deleteTeam = async (id: number): Promise<void> => {
-    const result = await axios.delete(`${controller}/${id}`);
-    return result;
-  };
-
-  const updateTeam = async (team: Team, image: HTMLInputElement): Promise<Team> =>
-  {
-    const formData = new FormData();
-
-    formData.append('team', JSON.stringify(team));
-
-    if (image !== null) {
+    if (image) {
       formData.append('image', image);
     }
-    
+
     const config = {
       headers: {
-        'content-type': 'multipart/form-data'
-      }
+        'content-type': 'multipart/form-data',
+      },
+    };
+
+    const result: AxiosResponse<Team> = await axios.post(controller, formData, config);
+    return result.data;
+  };
+
+  const deleteTeam = async (id: number): Promise<boolean> => {
+    await axios.delete(`${controller}/${id}`);
+    return true;
+  };
+
+  const updateTeam = async (team: Team, image: File | null): Promise<boolean> => {
+    const formData = new FormData();
+    formData.append('team', JSON.stringify(team));
+    if (image) {
+      formData.append('image', image);
     }
 
-    console.log("Team: ", team);
-    console.log("Image: ", image);
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data',
+      },
+    };
 
-    const result: AxiosResponse<Team> = await axios.put(`${controller}/${team.id}`, formData, config);
-    return result;
+    await axios.put(`${controller}/${team.id}`, formData, config);
+    return true;
   };
 
   return {
@@ -71,7 +67,7 @@ const TeamService = (() => {
     getAllTeams,
     addTeam,
     deleteTeam,
-    updateTeam
+    updateTeam,
   };
 })();
 

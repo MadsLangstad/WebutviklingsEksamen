@@ -1,272 +1,100 @@
 {
   "Files": [
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/css/style.css",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/css/style.css",
       "PackagePath": "staticwebassets/css/style.css"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/alexander-albon.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/alexander-albon.png",
       "PackagePath": "staticwebassets/images/drivers/alexander-albon.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/car.jpg",
-      "PackagePath": "staticwebassets/images/drivers/car.jpg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/carlos-sainz.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/carlos-sainz.png",
       "PackagePath": "staticwebassets/images/drivers/carlos-sainz.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/charles-leclerc.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/charles-leclerc.png",
       "PackagePath": "staticwebassets/images/drivers/charles-leclerc.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/daniel-ricciardo.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/daniel-ricciardo.png",
       "PackagePath": "staticwebassets/images/drivers/daniel-ricciardo.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/esteban-ocon.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/esteban-ocon.png",
       "PackagePath": "staticwebassets/images/drivers/esteban-ocon.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/fernando-alonso.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/fernando-alonso.png",
       "PackagePath": "staticwebassets/images/drivers/fernando-alonso.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/george-russel.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/george-russel.png",
       "PackagePath": "staticwebassets/images/drivers/george-russel.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/kevin-magnussen.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/kevin-magnussen.png",
       "PackagePath": "staticwebassets/images/drivers/kevin-magnussen.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lance-stroll.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lance-stroll.png",
       "PackagePath": "staticwebassets/images/drivers/lance-stroll.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lando-norris.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lando-norris.png",
       "PackagePath": "staticwebassets/images/drivers/lando-norris.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lena.jpg",
-      "PackagePath": "staticwebassets/images/drivers/lena.jpg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lewis-hamilton.png",
       "PackagePath": "staticwebassets/images/drivers/lewis-hamilton.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/lifePill.png",
-      "PackagePath": "staticwebassets/images/drivers/lifePill.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/logan-sargeant.png",
       "PackagePath": "staticwebassets/images/drivers/logan-sargeant.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/massOfPeople.jpeg",
-      "PackagePath": "staticwebassets/images/drivers/massOfPeople.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/max-verstappen.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/max-verstappen.png",
       "PackagePath": "staticwebassets/images/drivers/max-verstappen.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/nico-hulkenberg.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/nico-hulkenberg.png",
       "PackagePath": "staticwebassets/images/drivers/nico-hulkenberg.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/oscar-piastri.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/oscar-piastri.png",
       "PackagePath": "staticwebassets/images/drivers/oscar-piastri.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/pierre-gasly.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/pierre-gasly.png",
       "PackagePath": "staticwebassets/images/drivers/pierre-gasly.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/sergio-perez.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/sergio-perez.png",
       "PackagePath": "staticwebassets/images/drivers/sergio-perez.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/valtteri-bottas.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/valtteri-bottas.png",
       "PackagePath": "staticwebassets/images/drivers/valtteri-bottas.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/yuki-tsunoda.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/yuki-tsunoda.png",
       "PackagePath": "staticwebassets/images/drivers/yuki-tsunoda.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/zhou-guanyu.png",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/images/drivers/zhou-guanyu.png",
       "PackagePath": "staticwebassets/images/drivers/zhou-guanyu.png"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/Belgium_Circuit.png",
-      "PackagePath": "staticwebassets/images/races/Belgium_Circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/australia_circuit.png",
-      "PackagePath": "staticwebassets/images/races/australia_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/austria_circuit.png",
-      "PackagePath": "staticwebassets/images/races/austria_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/azerbaijan.png",
-      "PackagePath": "staticwebassets/images/races/azerbaijan.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/bahrain_circuit.png",
-      "PackagePath": "staticwebassets/images/races/bahrain_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/brazil_circuit.png",
-      "PackagePath": "staticwebassets/images/races/brazil_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/great_britain_circuit.png",
-      "PackagePath": "staticwebassets/images/races/great_britain_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/hungary_circuit.png",
-      "PackagePath": "staticwebassets/images/races/hungary_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/italy_circuit.png",
-      "PackagePath": "staticwebassets/images/races/italy_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/japan_circuit.png",
-      "PackagePath": "staticwebassets/images/races/japan_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/lifePill.png",
-      "PackagePath": "staticwebassets/images/races/lifePill.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/massOfPeople.jpeg",
-      "PackagePath": "staticwebassets/images/races/massOfPeople.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/mexico_circuit.png",
-      "PackagePath": "staticwebassets/images/races/mexico_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/miami.png",
-      "PackagePath": "staticwebassets/images/races/miami.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/monaco.png",
-      "PackagePath": "staticwebassets/images/races/monaco.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/montreal.png",
-      "PackagePath": "staticwebassets/images/races/montreal.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/netherlands_circuit.png",
-      "PackagePath": "staticwebassets/images/races/netherlands_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/qatar.png",
-      "PackagePath": "staticwebassets/images/races/qatar.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/saudi.png",
-      "PackagePath": "staticwebassets/images/races/saudi.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/singapore_circuit.png",
-      "PackagePath": "staticwebassets/images/races/singapore_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spaceK.jpeg",
-      "PackagePath": "staticwebassets/images/races/spaceK.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/spain_circuit.png",
-      "PackagePath": "staticwebassets/images/races/spain_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/tennis.jpeg",
-      "PackagePath": "staticwebassets/images/races/tennis.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/races/usa_circuit.png",
-      "PackagePath": "staticwebassets/images/races/usa_circuit.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/alfa-romeo-team-stake.png",
-      "PackagePath": "staticwebassets/images/teams/alfa-romeo-team-stake.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/alpine.png",
-      "PackagePath": "staticwebassets/images/teams/alpine.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/amg-petronas.png",
-      "PackagePath": "staticwebassets/images/teams/amg-petronas.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/aston-martin.png",
-      "PackagePath": "staticwebassets/images/teams/aston-martin.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/car.jpg",
-      "PackagePath": "staticwebassets/images/teams/car.jpg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/massOfPeople.jpeg",
-      "PackagePath": "staticwebassets/images/teams/massOfPeople.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/mclaren.png",
-      "PackagePath": "staticwebassets/images/teams/mclaren.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/moneygram.png",
-      "PackagePath": "staticwebassets/images/teams/moneygram.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/red-bull.png",
-      "PackagePath": "staticwebassets/images/teams/red-bull.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/scuderia-alphatauri.png",
-      "PackagePath": "staticwebassets/images/teams/scuderia-alphatauri.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/scuderia-ferrari.png",
-      "PackagePath": "staticwebassets/images/teams/scuderia-ferrari.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space.webp",
-      "PackagePath": "staticwebassets/images/teams/space.webp"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/space2.jpeg",
-      "PackagePath": "staticwebassets/images/teams/space2.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/spaceK.jpeg",
-      "PackagePath": "staticwebassets/images/teams/spaceK.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/tennis.jpeg",
-      "PackagePath": "staticwebassets/images/teams/tennis.jpeg"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/images/teams/williams-racing.png",
-      "PackagePath": "staticwebassets/images/teams/williams-racing.png"
-    },
-    {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "/Users/madslangstad/kristiania/Frontend-Mobile-Development-Exams/WebutviklingsEksamen/F1WebApi/wwwroot/scripts/index.js",
+      "Id": "/Users/madslangstad/repos/WebutviklingsEksamen/F1WebApi/wwwroot/scripts/index.js",
       "PackagePath": "staticwebassets/scripts/index.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.F1WebApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.F1WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
